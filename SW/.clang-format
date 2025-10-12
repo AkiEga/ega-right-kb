@@ -1,0 +1,54 @@
+# Project-wide C/C++ code style for clang-format
+# This file is read by VS Code C/C++ extension (C_Cpp) when C_Cpp.clang_format_style is set to "file".
+
+BasedOnStyle: LLVM
+Language:        Cpp
+
+# Indentation and spacing
+IndentWidth:     4
+TabWidth:        4
+UseTab:          Never
+ContinuationIndentWidth: 4
+PointerAlignment: Left
+SpaceAfterCStyleCast: true
+SpaceBeforeParens: ControlStatements
+SpacesInParentheses: false
+
+# Braces and line breaks (K&R / Attach style)
+BreakBeforeBraces: Attach
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+KeepEmptyLinesAtTheStartOfBlocks: false
+
+# Includes
+SortIncludes:    false      # Keep include order as-written (safer for embedded)
+IncludeBlocks:   Preserve
+
+# Wrapping
+ColumnLimit:     0          # Do not forcibly wrap lines
+BinPackArguments: true
+BinPackParameters: true
+AlignAfterOpenBracket: Align
+AlignOperands:   Align
+AlignConsecutiveAssignments: Consecutive
+AlignConsecutiveDeclarations: Consecutive
+AlignConsecutiveMacros:
+	Enabled: true
+	AcrossEmptyLines: false
+	AcrossComments: false
+	AlignCompound: true
+	PadOperators: true
+
+# Misc
+DerivePointerAlignment: false
+Cpp11BracedListStyle: true
+FixNamespaceComments: true
+
+# Align #define macro names/values into neat columns
+AlignConsecutiveMacros:
+	Enabled: true
+	AcrossEmptyLines: false
+	AcrossComments: false
+	AlignCompound: true
+	PadOperators: true
