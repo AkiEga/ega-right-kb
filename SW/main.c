@@ -52,15 +52,25 @@ static inline int memset_s(void *s, size_t smax, int c, size_t n) {
 #define BIT_PTRN_LEFT  (0b0100)
 #define BIT_PTRN_RIGHT (0b1000)
 
-// GPIO pin mapping for directional buttons
-// GPIO pin mapping for directional buttons (wrapped in parentheses)
-#define GPIO_AS_UP_BTN    (28)
-#define GPIO_AS_RIGHT_BTN (27)
-#define GPIO_AS_DOWN_BTN  (26)
-#define GPIO_AS_LEFT_BTN  (22)
-// Mouse click button
-// Mouse click button
-#define GPIO_AS_CLICK_BTN (2)
+// GPIO pin for keyboard as matrix circuit
+#define GPIO_ROW_0 (21)
+#define GPIO_ROW_1 (20)
+#define GPIO_ROW_2 (19)
+#define GPIO_ROW_3 (18)
+#define GPIO_ROW_4 (17)
+#define GPIO_ROW_5 (16)
+
+#define GPIO_COL_0 (4)
+#define GPIO_COL_1 (5)
+#define GPIO_COL_2 (6)
+#define GPIO_COL_3 (7)
+#define GPIO_COL_4 (8)
+#define GPIO_COL_5 (9)
+#define GPIO_COL_6 (3)
+#define GPIO_COL_7 (2)
+#define GPIO_COL_8 (1)
+#define GPIO_COL_9 (0)
+
 
 enum { IDX_UP    = 0,
        IDX_RIGHT = 1,
@@ -125,18 +135,28 @@ enum {
 
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
-void led_blinking_task(void);
 void hid_task(void);
 
 /*------------- MAIN -------------*/
 int main(void) {
     board_init();
-    // 入力ピンの初期化（内部プルアップ有効、Lowで押下）
-    const uint key_pins[] = {GPIO_AS_UP_BTN, GPIO_AS_RIGHT_BTN, GPIO_AS_DOWN_BTN, GPIO_AS_LEFT_BTN, GPIO_AS_CLICK_BTN};
-    for (size_t i = 0; i < (sizeof(key_pins) / sizeof(key_pins[0])); ++i) {
-        gpio_init(key_pins[i]);
-        gpio_set_dir(key_pins[i], GPIO_IN);
-        gpio_pull_up(key_pins[i]);
+    // init output pins（pull-up, high)
+    const uint output_pins[] = {GPIO_COL_0, GPIO_COL_1, GPIO_COL_2, GPIO_COL_3,
+                             GPIO_COL_4, GPIO_COL_5, GPIO_COL_6, GPIO_COL_7,
+                             GPIO_COL_8, GPIO_COL_9 };
+    for (size_t i = 0; i < (sizeof(output_pins) / sizeof(output_pins[0])); ++i) {
+        gpio_init(output_pins[i]);
+        gpio_set_dir(output_pins[i], GPIO_OUT);
+        gpio_pull_up(output_pins[i]);
+        gpio_put(output_pins[i], 1);
+    }
+
+    const uint input_pins[] = {GPIO_ROW_0, GPIO_ROW_1, GPIO_ROW_2, GPIO_ROW_3,
+                             GPIO_ROW_4, GPIO_ROW_5};
+    for (size_t i = 0; i < (sizeof(input_pins) / sizeof(input_pins[0])); ++i) {
+        gpio_init(input_pins[i]);
+        gpio_set_dir(input_pins[i], GPIO_IN);
+        gpio_pull_up(input_pins[i]);
     }
 
     // init device stack on configured roothub port
@@ -148,7 +168,6 @@ int main(void) {
 
     while (1) {
         tud_task(); // tinyusb device task
-        led_blinking_task();
 
         hid_task();
     }
@@ -185,117 +204,37 @@ void tud_resume_cb(void) {
 // USB HID
 //--------------------------------------------------------------------+
 
-static void send_hid_report(uint8_t report_id, uint32_t pressed_mask) {
+static void send_hid_report(uint8_t report_id, char pressed_key) {
     // skip if hid is not ready yet
     if (!tud_hid_ready())
         return;
 
-    switch (report_id) {
-    case REPORT_ID_MOUSE: {
-        // 方向割当: bit0:GP28=Left, bit1:GP27=Right, bit2:GP26=Up, bit3:GP22=Down
-        int8_t dx = 0, dy = 0;
-        if (pressed_mask & BIT_PTRN_LEFT)
-            dx -= step_from_hold(g_hold_ticks[IDX_LEFT]); // Left
-        if (pressed_mask & BIT_PTRN_RIGHT)
-            dx += step_from_hold(g_hold_ticks[IDX_RIGHT]); // Right
-        if (pressed_mask & BIT_PTRN_UP)
-            dy -= step_from_hold(g_hold_ticks[IDX_UP]); // Up
-        if (pressed_mask & BIT_PTRN_DOWN)
-            dy += step_from_hold(g_hold_ticks[IDX_DOWN]); // Down
-
-        // 変化がない場合は送信をスキップ（無駄なトラフィック抑制）
-        uint8_t buttons = (gpio_get(GPIO_AS_CLICK_BTN) == 0) ? 0x01 : 0x00; // 左クリック
-        if (dx != 0 || dy != 0 || buttons != 0) {
-            tud_hid_mouse_report(REPORT_ID_MOUSE, buttons, dx, dy, 0, 0);
-        }
-    } break;
-
-    default:
-        break;
-    }
+    
+    tud_hid_keyboard_report(report_id, g_kbd_macro.mods, (const uint8_t[6]){pressed_key, 0, 0, 0, 0, 0});
 }
 
 // Every 10ms, we will sent 1 report for each HID profile (keyboard, mouse etc ..)
 // tud_hid_report_complete_cb() is used to send the next report after previous one is complete
 void hid_task(void) {
     // Poll every 10ms
-    const uint32_t  interval_ms = 10;
-    static uint32_t start_ms    = 0;
-    static uint32_t prev_mask   = 0;
-    // ダブルタップ検出用（同一方向の連続押下の時間間隔をみる）
-    static uint32_t last_press_time[DIR_COUNT] = {0};
-    // static uint8_t  last_was_pressed[DIR_COUNT] = {0}; // 未使用
+    const uint32_t interval_ms = 10;
+    static uint32_t start_ms = 0;
 
-    if (board_millis() - start_ms < interval_ms)
-        return; // not enough time
+    if ( board_millis() - start_ms < interval_ms) return; // not enough time
     start_ms += interval_ms;
 
-    // 各GPIOの押下状態をビットマスク化
-    uint32_t pressed_mask = 0;
-    if (gpio_get(GPIO_AS_UP_BTN) == 0)
-        pressed_mask |= BIT_PTRN_UP;
-    if (gpio_get(GPIO_AS_RIGHT_BTN) == 0)
-        pressed_mask |= BIT_PTRN_RIGHT;
-    if (gpio_get(GPIO_AS_DOWN_BTN) == 0)
-        pressed_mask |= BIT_PTRN_DOWN;
-    if (gpio_get(GPIO_AS_LEFT_BTN) == 0)
-        pressed_mask |= BIT_PTRN_LEFT;
-
-    // 押下エッジ検出（履歴に記録 & ダブルタップ）
-    uint32_t rising = pressed_mask & ~prev_mask;
-    for (uint8_t i = 0; i < DIR_COUNT; ++i) {
-        if (rising & DIR_BITS[i]) {
-            history_push(i);
-            // ダブルタップ：200ms以内に同方向を2回
-            uint32_t now       = board_millis();
-            uint32_t delta     = now - last_press_time[i];
-            last_press_time[i] = now;
-            if (delta <= 200) {
-                // 右右 => Alt+Tab, 左左 => Shift+Alt+Tab
-                if (!g_kbd_macro.active) {
-                    g_kbd_macro.active = true;
-                    g_kbd_macro.stage  = 0; // 押下送信から開始
-                    (void)memset_s(g_kbd_macro.keys,
-                                   sizeof(g_kbd_macro.keys),
-                                   0,
-                                   sizeof(g_kbd_macro.keys));
-                    g_kbd_macro.keys[0] = HID_KEY_TAB;
-                    if (i == IDX_RIGHT) {
-                        g_kbd_macro.mods = KEYBOARD_MODIFIER_LEFTALT;
-                    } else if (i == IDX_LEFT) {
-                        g_kbd_macro.mods = KEYBOARD_MODIFIER_LEFTALT | KEYBOARD_MODIFIER_LEFTSHIFT;
-                    } else {
-                        g_kbd_macro.active = false; // 対象外方向
-                    }
-                }
-            }
-        }
-    }
-
-    // 長押しカウンタ更新
-    for (uint8_t i = 0; i < DIR_COUNT; ++i) {
-        if (pressed_mask & DIR_BITS[i]) {
-            if (g_hold_ticks[i] < 1000000u)
-                g_hold_ticks[i]++; // 過剰なオーバーフロー防止
-        } else {
-            g_hold_ticks[i] = 0;
-        }
-    }
-    prev_mask = pressed_mask;
+    uint32_t const btn = board_button_read();
 
     // Remote wakeup
-    if (tud_suspended() && (pressed_mask || (gpio_get(GPIO_AS_CLICK_BTN) == 0))) {
+    if ( tud_suspended() && btn )
+    {
         // Wake up host if we are in suspend mode
         // and REMOTE_WAKEUP feature is enabled by host
         tud_remote_wakeup();
-    } else {
-        // 先にキーボードマクロの押下が未送信なら送る
-        if (g_kbd_macro.active && g_kbd_macro.stage == 0 && tud_hid_ready()) {
-            tud_hid_keyboard_report(REPORT_ID_KEYBOARD, g_kbd_macro.mods, g_kbd_macro.keys);
-            g_kbd_macro.stage = 1; // 次は解放
-        }
-        // マウス移動を送信
-        send_hid_report(REPORT_ID_MOUSE, pressed_mask);
+    }else
+    {
+        // Send the 1st of report chain, the rest will be sent by tud_hid_report_complete_cb()
+        send_hid_report(REPORT_ID_KEYBOARD, btn);
     }
 }
 
@@ -315,19 +254,14 @@ void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_
         g_kbd_macro.stage  = 0;
         return; // このコールバックではここで終了
     }
-
+    char pressed_key;
     if (next_report_id < REPORT_ID_COUNT) {
-        // 連鎖レポート送信時も現状の押下マスクを使用（マクロで統一）
         uint32_t pressed_mask = 0;
-        if (gpio_get(GPIO_AS_UP_BTN) == 0)
-            pressed_mask |= BIT_PTRN_UP;
-        if (gpio_get(GPIO_AS_RIGHT_BTN) == 0)
-            pressed_mask |= BIT_PTRN_RIGHT;
-        if (gpio_get(GPIO_AS_DOWN_BTN) == 0)
-            pressed_mask |= BIT_PTRN_DOWN;
-        if (gpio_get(GPIO_AS_LEFT_BTN) == 0)
-            pressed_mask |= BIT_PTRN_LEFT;
-        send_hid_report(next_report_id, pressed_mask);
+        if (gpio_get(GPIO_ROW_0) == 0) {
+            pressed_key = 'W';
+        }
+    
+        send_hid_report(next_report_id, pressed_key);
     }
 }
 
@@ -349,29 +283,28 @@ uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_t
 // received data on OUT endpoint ( Report ID = 0, Type = 0 )
 void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize) {
     (void) instance;
-    (void) report_id;
-    (void) report_type;
-    (void) buffer;
-    (void) bufsize;
-    // マウス専用のため、SET_REPORTで行う処理はなし
-}
 
-//--------------------------------------------------------------------+
-// BLINKING TASK
-//--------------------------------------------------------------------+
-void led_blinking_task(void) {
-    static uint32_t start_ms  = 0;
-    static bool     led_state = false;
+  if (report_type == HID_REPORT_TYPE_OUTPUT)
+  {
+    // Set keyboard LED e.g Capslock, Numlock etc...
+    if (report_id == REPORT_ID_KEYBOARD)
+    {
+      // bufsize should be (at least) 1
+      if ( bufsize < 1 ) return;
 
-    // blink is disabled
-    if (!blink_interval_ms)
-        return;
+      uint8_t const kbd_leds = buffer[0];
 
-    // Blink every interval ms
-    if (board_millis() - start_ms < blink_interval_ms)
-        return; // not enough time
-    start_ms += blink_interval_ms;
-
-    board_led_write(led_state);
-    led_state = 1 - led_state; // toggle
+      if (kbd_leds & KEYBOARD_LED_CAPSLOCK)
+      {
+        // Capslock On: disable blink, turn led on
+        blink_interval_ms = 0;
+        board_led_write(true);
+      }else
+      {
+        // Caplocks Off: back to normal blink
+        board_led_write(false);
+        blink_interval_ms = BLINK_MOUNTED;
+      }
+    }
+  }
 }
