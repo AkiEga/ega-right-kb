@@ -1,5 +1,4 @@
 HW/KiCAD/ega-right-kb/ega-right-kb-backups/*.zip
 HW/KiCAD/ega-right-kb/production/backups/*.zip
-SW/build
-!SW/build/*.elf
+build
 

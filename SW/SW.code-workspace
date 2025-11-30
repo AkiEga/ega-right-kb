@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
+			"name": "SW",
 			"path": "."
 		},
 		{
-			"path": "../.."
+			"name": "ega-right-kb",
+			"path": ".."
 		}
 	],
 	"settings": {
