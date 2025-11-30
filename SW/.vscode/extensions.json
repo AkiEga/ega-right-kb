@@ -4,8 +4,6 @@
         "ms-vscode.cpptools",
         "ms-vscode.cpptools-extension-pack",
         "ms-vscode.vscode-serial-monitor",
-        "raspberry-pi.raspberry-pi-pico",
-        // Optional alternative formatter: clangd (also provides clang-format)
-        "llvm-vs-code-extensions.vscode-clangd"
+        "raspberry-pi.raspberry-pi-pico"
     ]
 }
