@@ -31,21 +31,30 @@
 #include "tusb.h"
 
 #include "usb_descriptors.h"
+#include "hardware/gpio.h"
 
 //--------------------------------------------------------------------+
 // MACRO CONSTANT TYPEDEF PROTYPES
 //--------------------------------------------------------------------+
 
-/* Blink pattern
- * - 250 ms  : device not mounted
- * - 1000 ms : device mounted
- * - 2500 ms : device is suspended
- */
-enum  {
-  BLINK_NOT_MOUNTED = 250,
-  BLINK_MOUNTED = 1000,
-  BLINK_SUSPENDED = 2500,
-};
+// GPIO pin for keyboard as matrix circuit
+#define GPIO_ROW_0 (21)
+#define GPIO_ROW_1 (20)
+#define GPIO_ROW_2 (19)
+#define GPIO_ROW_3 (18)
+#define GPIO_ROW_4 (17)
+#define GPIO_ROW_5 (16)
+
+#define GPIO_COL_0 (4)
+#define GPIO_COL_1 (5)
+#define GPIO_COL_2 (6)
+#define GPIO_COL_3 (7)
+#define GPIO_COL_4 (8)
+#define GPIO_COL_5 (9)
+#define GPIO_COL_6 (3)
+#define GPIO_COL_7 (2)
+#define GPIO_COL_8 (1)
+#define GPIO_COL_9 (0)
 
 static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
 
@@ -55,6 +64,25 @@ void hid_task(void);
 int main(void)
 {
   board_init();
+
+  // init output pins（pull-up, high)
+  const uint output_pins[] = {GPIO_COL_0, GPIO_COL_1, GPIO_COL_2, GPIO_COL_3,
+                             GPIO_COL_4, GPIO_COL_5, GPIO_COL_6, GPIO_COL_7,
+                             GPIO_COL_8, GPIO_COL_9 };
+  for (size_t i = 0; i < (sizeof(output_pins) / sizeof(output_pins[0])); ++i) {
+    gpio_init(output_pins[i]);
+    gpio_set_dir(output_pins[i], GPIO_OUT);
+    gpio_pull_up(output_pins[i]);
+    gpio_put(output_pins[i], 1);
+  }
+
+  const uint input_pins[] = {GPIO_ROW_0, GPIO_ROW_1, GPIO_ROW_2, GPIO_ROW_3,
+                            GPIO_ROW_4, GPIO_ROW_5};
+  for (size_t i = 0; i < (sizeof(input_pins) / sizeof(input_pins[0])); ++i) {
+    gpio_init(input_pins[i]);
+    gpio_set_dir(input_pins[i], GPIO_IN);
+    gpio_pull_up(input_pins[i]);
+  }
 
   // init device stack on configured roothub port
   tud_init(BOARD_TUD_RHPORT);
