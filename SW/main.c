@@ -109,7 +109,6 @@ void tud_mount_cb(void)
 // Invoked when device is unmounted
 void tud_umount_cb(void)
 {
-  blink_interval_ms = BLINK_NOT_MOUNTED;
 }
 
 // Invoked when usb bus is suspended
@@ -118,13 +117,11 @@ void tud_umount_cb(void)
 void tud_suspend_cb(bool remote_wakeup_en)
 {
   (void) remote_wakeup_en;
-  blink_interval_ms = BLINK_SUSPENDED;
 }
 
 // Invoked when usb bus is resumed
 void tud_resume_cb(void)
 {
-  blink_interval_ms = tud_mounted() ? BLINK_MOUNTED : BLINK_NOT_MOUNTED;
 }
 
 //--------------------------------------------------------------------+
@@ -172,6 +169,34 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
   }
 }
 
+// @brief keyboard switch read function
+// Scan the keyboard matrix and return the key states as a bitmask
+// @return bitmask of key states
+uint32_t keyboard_switch_read(void)
+{
+  uint32_t key_state = 0;
+
+  // Read rows
+  // TODO: Implement matrix scanning logic here
+  // Example logic (commented out):
+  // for (uint row = 0; row < 6; ++row) {
+  //   // Set current row low
+  //   gpio_put(GPIO_ROW_0 + row, 0);
+
+  //   // Read columns
+  //   for (uint col = 0; col < 10; ++col) {
+  //     if (gpio_get(GPIO_COL_0 + col) == 0) {
+  //       key_state |= (1 << (row * 10 + col));
+  //     }
+  //   }
+
+  //   // Set current row back to high
+  //   gpio_put(GPIO_ROW_0 + row, 1);
+  // }
+
+  return key_state;
+}
+
 // Every 10ms, we will sent 1 report for each HID profile (keyboard, mouse etc ..)
 // tud_hid_report_complete_cb() is used to send the next report after previous one is complete
 void hid_task(void)
@@ -183,7 +208,7 @@ void hid_task(void)
   if ( board_millis() - start_ms < interval_ms) return; // not enough time
   start_ms += interval_ms;
 
-  uint32_t const btn = board_button_read();
+  uint32_t const btn = keyboard_switch_read();
 
   // Remote wakeup
   if ( tud_suspended() && btn )
@@ -193,6 +218,7 @@ void hid_task(void)
     tud_remote_wakeup();
   }else
   {
+    // 
     // Send the 1st of report chain, the rest will be sent by tud_hid_report_complete_cb()
     send_hid_report(REPORT_ID_KEYBOARD, btn);
   }
@@ -210,7 +236,7 @@ void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_
 
   if (next_report_id < REPORT_ID_COUNT)
   {
-    send_hid_report(next_report_id, board_button_read());
+    send_hid_report(next_report_id, keyboard_switch_read());
   }
 }
 
@@ -234,29 +260,5 @@ uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_t
 void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t const* buffer, uint16_t bufsize)
 {
   (void) instance;
-
-  if (report_type == HID_REPORT_TYPE_OUTPUT)
-  {
-    // Set keyboard LED e.g Capslock, Numlock etc...
-    if (report_id == REPORT_ID_KEYBOARD)
-    {
-      // bufsize should be (at least) 1
-      if ( bufsize < 1 ) return;
-
-      uint8_t const kbd_leds = buffer[0];
-
-      if (kbd_leds & KEYBOARD_LED_CAPSLOCK)
-      {
-        // Capslock On: disable blink, turn led on
-        blink_interval_ms = 0;
-        board_led_write(true);
-      }else
-      {
-        // Caplocks Off: back to normal blink
-        board_led_write(false);
-        blink_interval_ms = BLINK_MOUNTED;
-      }
-    }
-  }
 }
 
