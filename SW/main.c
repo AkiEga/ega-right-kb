@@ -56,8 +56,6 @@
 #define GPIO_COL_8 (1)
 #define GPIO_COL_9 (0)
 
-static uint32_t blink_interval_ms = BLINK_NOT_MOUNTED;
-
 void hid_task(void);
 
 /*------------- MAIN -------------*/
@@ -106,7 +104,6 @@ int main(void)
 // Invoked when device is mounted
 void tud_mount_cb(void)
 {
-  blink_interval_ms = BLINK_MOUNTED;
 }
 
 // Invoked when device is unmounted
