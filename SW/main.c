@@ -37,6 +37,25 @@
 // MACRO CONSTANT TYPEDEF PROTYPES
 //--------------------------------------------------------------------+
 
+// Keyboard state structure to hold all 50 keys
+typedef struct {
+  // Modifier keys (8 bits)
+  struct {
+    uint8_t left_ctrl  : 1;
+    uint8_t left_shift : 1;
+    uint8_t left_alt   : 1;
+    uint8_t left_gui   : 1;  // Windows/Command key
+    uint8_t right_ctrl : 1;
+    uint8_t right_shift: 1;
+    uint8_t right_alt  : 1;
+    uint8_t right_gui  : 1;
+  } modifiers;
+
+  // Regular keys (up to 42 keys for alphanumeric and other keys)
+  // Using bit field for each key position
+  uint64_t keys;  // 64 bits = enough for 50 keys (row * 10 + col)
+} keyboard_state_t;
+
 // GPIO pin for keyboard as matrix circuit
 #define GPIO_ROW_0 (21)
 #define GPIO_ROW_1 (20)
@@ -128,7 +147,7 @@ void tud_resume_cb(void)
 // USB HID
 //--------------------------------------------------------------------+
 
-static void send_hid_report(uint8_t report_id, uint32_t btn)
+static void send_hid_report(uint8_t report_id, const keyboard_state_t* state)
 {
   // skip if hid is not ready yet
   if ( !tud_hid_ready() ) return;
@@ -140,12 +159,28 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
       // use to avoid send multiple consecutive zero report for keyboard
       static bool has_keyboard_key = false;
 
-      if ( btn )
+      // Check if any key is pressed
+      bool has_key = (state->keys != 0);
+
+      if ( has_key )
       {
+        // Build modifier byte from bit fields
+        uint8_t modifier = 0;
+        if (state->modifiers.left_ctrl)   modifier |= KEYBOARD_MODIFIER_LEFTCTRL;
+        if (state->modifiers.left_shift)  modifier |= KEYBOARD_MODIFIER_LEFTSHIFT;
+        if (state->modifiers.left_alt)    modifier |= KEYBOARD_MODIFIER_LEFTALT;
+        if (state->modifiers.left_gui)    modifier |= KEYBOARD_MODIFIER_LEFTGUI;
+        if (state->modifiers.right_ctrl)  modifier |= KEYBOARD_MODIFIER_RIGHTCTRL;
+        if (state->modifiers.right_shift) modifier |= KEYBOARD_MODIFIER_RIGHTSHIFT;
+        if (state->modifiers.right_alt)   modifier |= KEYBOARD_MODIFIER_RIGHTALT;
+        if (state->modifiers.right_gui)   modifier |= KEYBOARD_MODIFIER_RIGHTGUI;
+
+        // TODO: Map bit positions to HID keycodes
+        // For now, send HID_KEY_A as placeholder
         uint8_t keycode[6] = { 0 };
         keycode[0] = HID_KEY_A;
 
-        tud_hid_keyboard_report(REPORT_ID_KEYBOARD, 0, keycode);
+        tud_hid_keyboard_report(REPORT_ID_KEYBOARD, modifier, keycode);
         has_keyboard_key = true;
       }else
       {
@@ -170,41 +205,59 @@ static void send_hid_report(uint8_t report_id, uint32_t btn)
 }
 
 // @brief keyboard switch read function
-// Scan the keyboard matrix and return the key states as a bitmask
-// @return bitmask of key states
-uint32_t keyboard_switch_read(void)
+// Scan the keyboard matrix and return the key states as a structure
+// @param state Pointer to keyboard_state_t to store the scan results
+void keyboard_switch_read(keyboard_state_t* state)
 {
-  uint32_t key_state = 0;
+  // Clear the state
+  memset(state, 0, sizeof(keyboard_state_t));
 
-  // Read rows
-  // TODO: Implement matrix scanning logic here
-  // Example logic (commented out):
-  // for (uint row = 0; row < 6; ++row) {
-  //   // Set current row low
-  //   gpio_put(GPIO_ROW_0 + row, 0);
+  // Column GPIO pins array (outputs)
+  const uint col_pins[] = {GPIO_COL_0, GPIO_COL_1, GPIO_COL_2, GPIO_COL_3,
+                           GPIO_COL_4, GPIO_COL_5, GPIO_COL_6, GPIO_COL_7,
+                           GPIO_COL_8, GPIO_COL_9};
+  
+  // Row GPIO pins array (inputs)
+  const uint row_pins[] = {GPIO_ROW_0, GPIO_ROW_1, GPIO_ROW_2, 
+                           GPIO_ROW_3, GPIO_ROW_4, GPIO_ROW_5};
 
-  //   // Read columns
-  //   for (uint col = 0; col < 10; ++col) {
-  //     if (gpio_get(GPIO_COL_0 + col) == 0) {
-  //       key_state |= (1 << (row * 10 + col));
-  //     }
-  //   }
+  // Scan each column
+  for (uint col = 0; col < 10; ++col) {
+    // Set current column low (active)
+    gpio_put(col_pins[col], 0);
+    
+    // Small delay to allow signal to stabilize
+    sleep_us(1);
 
-  //   // Set current row back to high
-  //   gpio_put(GPIO_ROW_0 + row, 1);
-  // }
+    // Read all rows
+    for (uint row = 0; row < 6; ++row) {
+      // If row is low, key is pressed (active low with pull-up)
+      if (gpio_get(row_pins[row]) == 0) {
+        // Calculate bit position for this key
+        // Layout: row 0-5, col 0-9 = bit position 0-49
+        uint32_t bit_pos = row * 10 + col;
+        
+        if (bit_pos < 64) {  // Safety check for 64-bit field
+          // Set the corresponding bit in the keys field
+          state->keys |= (1ULL << bit_pos);
+        }
+      }
+    }
 
-  return key_state;
-}
+  static keyboard_state_t key_state;
+  keyboard_switch_read(&key_state);
 
-// Every 10ms, we will sent 1 report for each HID profile (keyboard, mouse etc ..)
-// tud_hid_report_complete_cb() is used to send the next report after previous one is complete
-void hid_task(void)
-{
-  // Poll every 10ms
-  const uint32_t interval_ms = 10;
-  static uint32_t start_ms = 0;
-
+  // Remote wakeup
+  if ( tud_suspended() && key_state.keys != 0 )
+  {
+    // Wake up host if we are in suspend mode
+    // and REMOTE_WAKEUP feature is enabled by host
+    tud_remote_wakeup();
+  }else
+  {
+    // 
+    // Send the 1st of report chain, the rest will be sent by tud_hid_report_complete_cb()
+    send_hid_report(REPORT_ID_KEYBOARD, &key_state
   if ( board_millis() - start_ms < interval_ms) return; // not enough time
   start_ms += interval_ms;
 
@@ -219,7 +272,9 @@ void hid_task(void)
   }else
   {
     // 
-    // Send the 1st of report chain, the rest will be sent by tud_hid_report_complete_cb()
+    /tatic keyboard_state_t key_state;
+    keyboard_switch_read(&key_state);
+    send_hid_report(next_report_id, &key_state by tud_hid_report_complete_cb()
     send_hid_report(REPORT_ID_KEYBOARD, btn);
   }
 }
