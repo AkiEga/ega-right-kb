@@ -88,9 +88,10 @@ static const uint8_t keycode_map[NUM_ROWS][NUM_COLS] = {
   { HID_KEY_T, HID_KEY_Y, HID_KEY_U, HID_KEY_I, HID_KEY_O,
     HID_KEY_P, HID_KEY_BRACKET_LEFT, HID_KEY_BRACKET_RIGHT, HID_KEY_ENTER, 0 },
   
-  // ROW3: G, H, J, K, L, ;, :, ], (empty), (empty)
+  // ROW3: G, H, J, K, L, ;, :, ](む), (empty), (empty)
+  // HID_KEY_EUROPE_1 (0x32) = JIS "む" key (] and })
   { HID_KEY_G, HID_KEY_H, HID_KEY_J, HID_KEY_K, HID_KEY_L,
-    HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_GRAVE, 0, 0 },
+    HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_EUROPE_1, 0, 0 },
   
   // ROW4: B, N, M, <(,), >(.), /, \(ろ), RShift, (empty), (empty)
   // HID_KEY_KANJI1 (0x87) = JIS "ろ" key (\ and _)
