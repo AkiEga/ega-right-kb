@@ -92,12 +92,14 @@ static const uint8_t keycode_map[NUM_ROWS][NUM_COLS] = {
   { HID_KEY_G, HID_KEY_H, HID_KEY_J, HID_KEY_K, HID_KEY_L,
     HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_GRAVE, 0, 0 },
   
-  // ROW4: B, N, M, <(,), >(.), /, _, RShift, (empty), (empty)
+  // ROW4: B, N, M, <(,), >(.), /, \(ろ), RShift, (empty), (empty)
+  // HID_KEY_KANJI1 (0x87) = JIS "ろ" key (\ and _)
   { HID_KEY_B, HID_KEY_N, HID_KEY_M, HID_KEY_COMMA, HID_KEY_PERIOD,
-    HID_KEY_SLASH, HID_KEY_EUROPE_2, 0, 0, 0 },
+    HID_KEY_SLASH, HID_KEY_KANJI1, 0, 0, 0 },
   
   // ROW5: 無変換, Space, 変換, Alt, Context, RCtrl, (empty), (empty), (empty), (empty)
-  { HID_KEY_KANJI2, HID_KEY_SPACE, HID_KEY_KANJI1, 0, HID_KEY_APPLICATION, 0, 0, 0, 0, 0 }
+  // HID_KEY_KANJI2 (0x88) = 無変換, HID_KEY_KANJI4 (0x8A) = 変換
+  { HID_KEY_KANJI2, HID_KEY_SPACE, HID_KEY_KANJI4, 0, HID_KEY_APPLICATION, 0, 0, 0, 0, 0 }
 };
 
 // Modifier key positions (row * 10 + col)
