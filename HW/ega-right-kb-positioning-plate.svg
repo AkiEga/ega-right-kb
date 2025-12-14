@@ -86,7 +86,7 @@
      inkscape:label="KiCAD"
      transform="matrix(0.26458333,0,0,0.26458333,217.40165,-60.302275)"
      sodipodi:insensitive="true"
-     style="display:inline"><path
+     style="display:none"><path
        id="path1"
        d="m -814.28572,226.15099 725.22086,3.70482 -1.852409,616.85237 -727.073271,-14.81927 z"
        style="display:none;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
