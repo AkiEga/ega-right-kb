@@ -27,7 +27,7 @@ Raspberry Pi Pico 上で TinyUSB を使用するカスタムキーボードフ�
 | ROW2 | GPIO19 | SW20(T)      | SW21(Y)     | SW22(U)    | SW23(I)   | SW24(O)       | SW25(P)     | SW26(@)  | SW27(\[)     | SW28(Enter) |          |
 | ROW3 | GPIO18 | SW29(G)      | SW30(H)     | SW31(J)    | SW32(K)   | SW33(L)       | SW34(;)     | SW35(:)  | SW36(\])     |             |          |
 | ROW4 | GPIO17 | SW37(B)      | SW38(N)     | SW39(M)    | SW40(<)   | SW41(>)       | SW42(/)     | SW43(\_) | SW44(RShift) |             |          |
-| ROW5 | GPIO16 | SW45(無変換) | SW46(Space) | SW47(変換) | SW48(Alt) | SW49(Context) | SW50(RCtrl) |          |              |             |          |
+| ROW5 | GPIO16 | SW45(Space) | SW46(変換) | SW47(Alt) | SW48(PrintScreen) | SW49(Delete) | SW50(RCtrl) |          |              |             |          |
 
 **注：** 回路図では 50 スイッチが 6 行（ROW0-5）× 10 列（COL0-9）に配置されています。各行のスイッチ数は物理レイアウトに応じて異なります。
 
@@ -41,7 +41,7 @@ Raspberry Pi Pico 上で TinyUSB を使用するカスタムキーボードフ�
 
 ### ビルドシステム
 
-- **CMake + Pico SDK 2.2.0**（ツールチェーン: 14_2_Rel1）
+- CMake + [Pico SDK](https://github.com/raspberrypi/pico-sdk)
 - 出力: `build/ega_right_kb.uf2`
 - 依存関係: `pico_stdlib`, `tinyusb_device`, `tinyusb_board`, `hardware_gpio`
 

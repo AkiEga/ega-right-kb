@@ -96,14 +96,14 @@ static const uint8_t keycode_map[NUM_ROWS][NUM_COLS] = {
   // HID_KEY_KANJI1 (0x87) = JIS "ろ" key (\ and _)
   { HID_KEY_B, HID_KEY_N, HID_KEY_M, HID_KEY_COMMA, HID_KEY_PERIOD, HID_KEY_SLASH, HID_KEY_KANJI1, 0, 0, 0 },
   
-  // ROW5: Space, 変換, Alt, Alt, Context, RCtrl, (empty), (empty), (empty), (empty)
+  // ROW5: Space, 変換, Alt, PrintScreen, Delete, RCtrl, (empty), (empty), (empty), (empty)
   // HID_KEY_KANJI2 (0x88) = 無変換, HID_KEY_KANJI4 (0x8A) = 変換
-  { HID_KEY_SPACE, HID_KEY_KANJI4, HID_KEY_ALT_RIGHT,HID_KEY_ALT_RIGHT, HID_KEY_APPLICATION, HID_KEY_CONTROL_RIGHT, 0, 0, 0}
+  { HID_KEY_SPACE, HID_KEY_KANJI4, HID_KEY_ALT_RIGHT,HID_KEY_PRINT_SCREEN, HID_KEY_DELETE, HID_KEY_CONTROL_RIGHT, 0, 0, 0}
 };
 
 // Modifier key positions (row * 10 + col)
 #define KEY_POS_RSHIFT  (4 * 10 + 7)  // SW44 - Right Shift
-#define KEY_POS_RALT    (5 * 10 + 3)  // SW48 - Right Alt
+#define KEY_POS_RALT    (5 * 10 + 2)  // SW47 - Right Alt
 #define KEY_POS_RCTRL   (5 * 10 + 5)  // SW50 - Right Ctrl
 
 // Keyboard state - 64 bits for up to 60 keys
