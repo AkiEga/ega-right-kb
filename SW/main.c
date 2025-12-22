@@ -72,39 +72,71 @@ static const uint col_pins[NUM_COLS] = {
   GPIO_COL_5, GPIO_COL_6, GPIO_COL_7, GPIO_COL_8, GPIO_COL_9
 };
 
+// Number of layers
+#define NUM_LAYERS 2
+
 // Key to HID keycode mapping table
-// Index = row * 10 + col, Value = HID keycode
+// Index = [layer][row][col], Value = HID keycode
 // Based on README.md matrix layout (JIS layout right-hand side)
-static const uint8_t keycode_map[NUM_ROWS][NUM_COLS] = {
-  // ROW0: F4, F5, F6, F7, F8, F9, F10, F11, F12, (empty)
-  { HID_KEY_F4, HID_KEY_F5, HID_KEY_F6, HID_KEY_F7, HID_KEY_F8, 
-    HID_KEY_F9, HID_KEY_F10, HID_KEY_F11, HID_KEY_F12, 0 },
-  
-  // ROW1: 5, 6, 7, 8, 9, 0, -, ^, \, Backspace
-  { HID_KEY_5, HID_KEY_6, HID_KEY_7, HID_KEY_8, HID_KEY_9,
-    HID_KEY_0, HID_KEY_MINUS, HID_KEY_EQUAL, HID_KEY_KANJI3, HID_KEY_BACKSPACE },
-  
-  // ROW2: T, Y, U, I, O, P, @, [, Enter, (empty)
-  { HID_KEY_T, HID_KEY_Y, HID_KEY_U, HID_KEY_I, HID_KEY_O,
-    HID_KEY_P, HID_KEY_BRACKET_LEFT, HID_KEY_BRACKET_RIGHT, HID_KEY_ENTER, 0 },
-  
-  // ROW3: G, H, J, K, L, ;, :, ](む), (empty), (empty)
-  // HID_KEY_EUROPE_1 (0x32) = JIS "む" key (] and })
-  { HID_KEY_G, HID_KEY_H, HID_KEY_J, HID_KEY_K, HID_KEY_L,  HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_EUROPE_1, 0, 0 },
-  
-  // ROW4: B, N, M, <(,), >(.), /, \(ろ), RShift, (empty), (empty)
-  // HID_KEY_KANJI1 (0x87) = JIS "ろ" key (\ and _)
-  { HID_KEY_B, HID_KEY_N, HID_KEY_M, HID_KEY_COMMA, HID_KEY_PERIOD, HID_KEY_SLASH, HID_KEY_KANJI1, 0, 0, 0 },
-  
-  // ROW5: Space, 変換, Alt, PrintScreen, Delete, RCtrl, (empty), (empty), (empty), (empty)
-  // HID_KEY_KANJI2 (0x88) = 無変換, HID_KEY_KANJI4 (0x8A) = 変換
-  { HID_KEY_SPACE, HID_KEY_KANJI4, HID_KEY_ALT_RIGHT,HID_KEY_PRINT_SCREEN, HID_KEY_DELETE, HID_KEY_CONTROL_RIGHT, 0, 0, 0}
+static const uint8_t keycode_map[NUM_LAYERS][NUM_ROWS][NUM_COLS] = {
+  // Layer 0 (Base layer)
+  {
+    // ROW0: F4, F5, F6, F7, F8, F9, F10, F11, F12, (empty)
+    { HID_KEY_F4, HID_KEY_F5, HID_KEY_F6, HID_KEY_F7, HID_KEY_F8, 
+      HID_KEY_F9, HID_KEY_F10, HID_KEY_F11, HID_KEY_F12, 0 },
+    
+    // ROW1: 5, 6, 7, 8, 9, 0, -, ^, \, Backspace
+    { HID_KEY_5, HID_KEY_6, HID_KEY_7, HID_KEY_8, HID_KEY_9,
+      HID_KEY_0, HID_KEY_MINUS, HID_KEY_EQUAL, HID_KEY_KANJI3, HID_KEY_BACKSPACE },
+    
+    // ROW2: T, Y, U, I, O, P, @, [, Enter, (empty)
+    { HID_KEY_T, HID_KEY_Y, HID_KEY_U, HID_KEY_I, HID_KEY_O,
+      HID_KEY_P, HID_KEY_BRACKET_LEFT, HID_KEY_BRACKET_RIGHT, HID_KEY_ENTER, 0 },
+    
+    // ROW3: G, H, J, K, L, ;, :, ](む), (empty), (empty)
+    { HID_KEY_G, HID_KEY_H, HID_KEY_J, HID_KEY_K, HID_KEY_L,
+      HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_EUROPE_1, 0, 0 },
+    
+    // ROW4: B, N, M, <(,), >(.), /, \(ろ), RShift, (empty), (empty)
+    { HID_KEY_B, HID_KEY_N, HID_KEY_M, HID_KEY_COMMA, HID_KEY_PERIOD,
+      HID_KEY_SLASH, HID_KEY_KANJI1, 0, 0, 0 },
+    
+    // ROW5: Space, 変換, Alt, PrintScreen, Delete, FN, (empty), (empty), (empty), (empty)
+    { HID_KEY_SPACE, HID_KEY_KANJI4, HID_KEY_ALT_RIGHT, HID_KEY_PRINT_SCREEN,
+      HID_KEY_DELETE, 0, 0, 0, 0, 0 }
+  },
+  // Layer 1 (FN layer) - Arrow keys on HJKL, Home/End/PgUp/PgDn, etc.
+  {
+    // ROW0: (empty)...
+    { 0, 0, 0, 0, 0, 
+      0, 0, 0, 0, 0 },
+    
+    // ROW1: (empty)...
+    { 0, 0, 0, 0, 0, 
+      0, 0, 0, 0, 0 },
+    
+    // ROW2: (empty)...
+    { 0, 0, 0, 0, 0, 
+      0, 0, 0, 0, 0 },
+    
+    // ROW3: (empty), (empty), (empty), (empty), (empty), Arrow Up, (empty), (empty), (empty), (empty)
+    { 0, 0, 0, 0, 0,
+      HID_KEY_ARROW_UP, 0, 0, 0, 0 },
+
+    // ROW4: (empty), (empty), (empty), (empty), Arrow Left, Arrow Down, Arrow Right, (empty), (empty), (empty)
+    { 0, 0, 0, 0, HID_KEY_ARROW_LEFT,
+      HID_KEY_ARROW_DOWN, HID_KEY_ARROW_RIGHT, 0, 0, 0 },
+    
+    // ROW5: (empty)...
+    { 0, 0, 0, 0, 0, 
+      0, 0, 0, 0, 0 }
+  }
 };
 
 // Modifier key positions (row * 10 + col)
 #define KEY_POS_RSHIFT  (4 * 10 + 7)  // SW44 - Right Shift
 #define KEY_POS_RALT    (5 * 10 + 2)  // SW47 - Right Alt
-#define KEY_POS_RCTRL   (5 * 10 + 5)  // SW50 - Right Ctrl
+#define KEY_POS_FN      (5 * 10 + 5)  // SW50 - FN key (replaces RCtrl)
 
 // Keyboard state - 64 bits for up to 60 keys
 static uint64_t g_key_state = 0;
@@ -227,6 +259,9 @@ static void send_hid_report(uint8_t report_id, uint64_t key_state)
         uint8_t modifier = 0;
         uint8_t keycode[6] = { 0 };
         uint8_t key_count = 0;
+        
+        // Determine active layer based on FN key state
+        uint8_t layer = (key_state & (1ULL << KEY_POS_FN)) ? 1 : 0;
 
         // Check modifier keys and build keycode array
         for (uint row = 0; row < NUM_ROWS && key_count < 6; ++row) {
@@ -234,16 +269,16 @@ static void send_hid_report(uint8_t report_id, uint64_t key_state)
             uint32_t bit_pos = row * NUM_COLS + col;
             
             if (key_state & (1ULL << bit_pos)) {
-              // Check if this is a modifier key
+              // Check if this is a modifier key or FN key
               if (bit_pos == KEY_POS_RSHIFT) {
                 modifier |= KEYBOARD_MODIFIER_RIGHTSHIFT;
               } else if (bit_pos == KEY_POS_RALT) {
                 modifier |= KEYBOARD_MODIFIER_RIGHTALT;
-              } else if (bit_pos == KEY_POS_RCTRL) {
-                modifier |= KEYBOARD_MODIFIER_RIGHTCTRL;
+              } else if (bit_pos == KEY_POS_FN) {
+                // FN key - don't send any keycode, just used for layer switching
               } else {
-                // Regular key - add to keycode array
-                uint8_t kc = keycode_map[row][col];
+                // Regular key - add to keycode array using current layer
+                uint8_t kc = keycode_map[layer][row][col];
                 if (kc != 0 && key_count < 6) {
                   keycode[key_count++] = kc;
                 }
