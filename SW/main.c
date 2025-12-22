@@ -82,7 +82,7 @@ static const uint8_t keycode_map[NUM_ROWS][NUM_COLS] = {
   
   // ROW1: 5, 6, 7, 8, 9, 0, -, ^, \, Backspace
   { HID_KEY_5, HID_KEY_6, HID_KEY_7, HID_KEY_8, HID_KEY_9,
-    HID_KEY_0, HID_KEY_MINUS, HID_KEY_EQUAL, HID_KEY_BACKSLASH, HID_KEY_BACKSPACE },
+    HID_KEY_0, HID_KEY_MINUS, HID_KEY_EQUAL, HID_KEY_KANJI3, HID_KEY_BACKSPACE },
   
   // ROW2: T, Y, U, I, O, P, @, [, Enter, (empty)
   { HID_KEY_T, HID_KEY_Y, HID_KEY_U, HID_KEY_I, HID_KEY_O,
