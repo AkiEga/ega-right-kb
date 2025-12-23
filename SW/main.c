@@ -74,6 +74,7 @@ static const uint col_pins[NUM_COLS] = {
 
 // Number of layers
 #define NUM_LAYERS 2
+// #define HID_KEY_FN 0xFF  // Custom code for FN key
 
 // Key to HID keycode mapping table
 // Index = [layer][row][col], Value = HID keycode
@@ -127,7 +128,7 @@ static const uint8_t keycode_map[NUM_LAYERS][NUM_ROWS][NUM_COLS] = {
     { 0, 0, 0, 0, HID_KEY_ARROW_LEFT,
       HID_KEY_ARROW_DOWN, HID_KEY_ARROW_RIGHT, 0, 0, 0 },
     
-    // ROW5: (empty)...
+    // ROW5: (empty)... (FN key is handled specially, not via keycode_map)
     { 0, 0, 0, 0, 0, 
       0, 0, 0, 0, 0 }
   }
@@ -261,7 +262,10 @@ static void send_hid_report(uint8_t report_id, uint64_t key_state)
         uint8_t key_count = 0;
         
         // Determine active layer based on FN key state
-        uint8_t layer = (key_state & (1ULL << KEY_POS_FN)) ? 1 : 0;
+        uint8_t layer = 0;
+        if (key_state & (1ULL << KEY_POS_FN)) {
+          layer = 1; // FN key pressed - switch to layer 1
+        }
 
         // Check modifier keys and build keycode array
         for (uint row = 0; row < NUM_ROWS && key_count < 6; ++row) {
@@ -325,8 +329,9 @@ void hid_task(void)
   // Read keyboard matrix
   keyboard_switch_read(&g_key_state);
 
-  // LED on when any key is pressed
-  board_led_write(g_key_state != 0);
+  // LED on when FN key is pressed (for debugging layer switch)
+  // Change to (g_key_state != 0) to test any key press
+  board_led_write((g_key_state & (1ULL << KEY_POS_FN)) != 0);
 
   // Remote wakeup
   if (tud_suspended() && g_key_state != 0)
