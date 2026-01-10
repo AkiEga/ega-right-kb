@@ -1,7 +1,7 @@
 
-  <svg width='840px'
-       height='381px'
-       viewBox='0 0 840 381'
+  <svg width='934.5px'
+       height='394.5px'
+       viewBox='0 0 934.5 394.5'
        xmlns='http://www.w3.org/2000/svg'
        xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -31,7 +31,7 @@
     </defs>
 
     <g transform='translate(10,10)'>
-      <rect width="820" height="361"
+      <rect width="914.5" height="374.5"
             stroke="#ddd" stroke-width="1" fill="#eeeeee" rx="6"/>
       <g transform='translate(5,5)'>
         
@@ -952,6 +952,38 @@
 
   
     <!-- Outer Border -->
+    <rect x="824.5" y="136"
+          width="52" height="52"
+          rx="5" fill="#cccccc" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="824.5" y="136"
+          width="52" height="52"
+          rx="5" fill="#cccccc"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="830.5" y="139"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="830.5" y="139"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc"/>
+      
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
     <rect x="311.5" y="190"
           width="52" height="52"
           rx="5" fill="#cccccc" class="outer border"/>
@@ -1208,6 +1240,38 @@
 
   
     <!-- Outer Border -->
+    <rect x="824.5" y="190"
+          width="52" height="52"
+          rx="5" fill="#cccccc" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="824.5" y="190"
+          width="52" height="52"
+          rx="5" fill="#cccccc"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="830.5" y="193"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="830.5" y="193"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc"/>
+      
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
     <rect x="338.5" y="244"
           width="52" height="52"
           rx="5" fill="#cccccc" class="outer border"/>
@@ -1432,25 +1496,89 @@
 
   
     <!-- Outer Border -->
-    <rect x="716.5" y="244"
-          width="92.5" height="52"
+    <rect x="743.5" y="257.5"
+          width="52" height="52"
           rx="5" fill="#cccccc" class="outer border"/>
     
     <!-- Outer Fill -->
-    <rect x="716.5" y="244"
-          width="92.5" height="52"
+    <rect x="743.5" y="257.5"
+          width="52" height="52"
           rx="5" fill="#cccccc"/>
     
 
     
       <!-- Inner Border -->
-      <rect x="722.5" y="247"
-            width="80.5" height="40"
+      <rect x="749.5" y="260.5"
+            width="40" height="40"
             rx="5" fill="#fcfcfc" class="inner border"/>
       
       <!-- Inner Fill -->
-      <rect x="722.5" y="247"
-            width="80.5" height="40"
+      <rect x="749.5" y="260.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc"/>
+      
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="797.5" y="257.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="797.5" y="257.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="803.5" y="260.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="803.5" y="260.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc"/>
+      
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="851.5" y="257.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="851.5" y="257.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="857.5" y="260.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="857.5" y="260.5"
+            width="40" height="40"
             rx="5" fill="#fcfcfc"/>
       
       
@@ -1593,24 +1721,24 @@
   
     <!-- Outer Border -->
     <rect x="676" y="298"
-          width="65.5" height="52"
+          width="52" height="52"
           rx="5" fill="#cccccc" class="outer border"/>
     
     <!-- Outer Fill -->
     <rect x="676" y="298"
-          width="65.5" height="52"
+          width="52" height="52"
           rx="5" fill="#cccccc"/>
     
 
     
       <!-- Inner Border -->
       <rect x="682" y="301"
-            width="53.5" height="40"
+            width="40" height="40"
             rx="5" fill="#fcfcfc" class="inner border"/>
       
       <!-- Inner Fill -->
       <rect x="682" y="301"
-            width="53.5" height="40"
+            width="40" height="40"
             rx="5" fill="#fcfcfc"/>
       
       
@@ -1624,25 +1752,89 @@
 
   
     <!-- Outer Border -->
-    <rect x="743.5" y="298"
-          width="65.5" height="52"
+    <rect x="743.5" y="311.5"
+          width="52" height="52"
           rx="5" fill="#cccccc" class="outer border"/>
     
     <!-- Outer Fill -->
-    <rect x="743.5" y="298"
-          width="65.5" height="52"
+    <rect x="743.5" y="311.5"
+          width="52" height="52"
           rx="5" fill="#cccccc"/>
     
 
     
       <!-- Inner Border -->
-      <rect x="749.5" y="301"
-            width="53.5" height="40"
+      <rect x="749.5" y="314.5"
+            width="40" height="40"
             rx="5" fill="#fcfcfc" class="inner border"/>
       
       <!-- Inner Fill -->
-      <rect x="749.5" y="301"
-            width="53.5" height="40"
+      <rect x="749.5" y="314.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc"/>
+      
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="797.5" y="311.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="797.5" y="311.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="803.5" y="314.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="803.5" y="314.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc"/>
+      
+      
+
+     
+   
+  </g>
+
+  <g class='  keycap'
+  >
+
+  
+    <!-- Outer Border -->
+    <rect x="851.5" y="311.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc" class="outer border"/>
+    
+    <!-- Outer Fill -->
+    <rect x="851.5" y="311.5"
+          width="52" height="52"
+          rx="5" fill="#cccccc"/>
+    
+
+    
+      <!-- Inner Border -->
+      <rect x="857.5" y="314.5"
+            width="40" height="40"
+            rx="5" fill="#fcfcfc" class="inner border"/>
+      
+      <!-- Inner Fill -->
+      <rect x="857.5" y="314.5"
+            width="40" height="40"
             rx="5" fill="#fcfcfc"/>
       
       
