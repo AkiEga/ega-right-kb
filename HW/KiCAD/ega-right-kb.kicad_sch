@@ -1486,6 +1486,18 @@
 		(uuid "155cead5-60b8-4916-9c01-0e5a880f9257")
 	)
 	(junction
+		(at 312.42 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "163ca4f3-1365-448c-bc1c-1e09a1e5c644")
+	)
+	(junction
+		(at 300.99 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1a36a81e-aba0-40e2-86fb-6458bc2aa518")
+	)
+	(junction
 		(at 50.8 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1618,6 +1630,12 @@
 		(uuid "3e726b91-cb1a-4bdb-864b-44bf5eb69bea")
 	)
 	(junction
+		(at 261.62 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ed0e240-c78f-43bc-b82d-8913f2399b6e")
+	)
+	(junction
 		(at 173.99 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1628,6 +1646,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44701254-8685-4731-bd36-73a8d1668c1d")
+	)
+	(junction
+		(at 337.82 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "44b80ae9-c7ba-47cc-8590-0a4c3041e84c")
 	)
 	(junction
 		(at 287.02 95.25)
@@ -1646,6 +1670,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4bff077b-022d-4119-80a1-7cce04a7bc93")
+	)
+	(junction
+		(at 326.39 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5215ec6b-cc18-4b9c-9181-7b59e6b7131b")
 	)
 	(junction
 		(at 173.99 83.82)
@@ -1696,10 +1726,22 @@
 		(uuid "6c2b998d-c7f2-464d-ac09-1ea8ca18123a")
 	)
 	(junction
+		(at 300.99 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70f57be5-aa32-47bb-98d3-ba077945b29a")
+	)
+	(junction
 		(at 134.62 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7127a0eb-4109-40e4-9543-aa84c40edb3b")
+	)
+	(junction
+		(at 250.19 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75df62f4-5a66-41ac-afc6-1a934487335f")
 	)
 	(junction
 		(at 185.42 58.42)
@@ -1730,6 +1772,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8439fe0e-3924-4659-a30b-dd96233ef20a")
+	)
+	(junction
+		(at 325.12 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84a20d74-3e31-4355-8eaa-233bb0f0be75")
 	)
 	(junction
 		(at 224.79 158.75)
@@ -1768,6 +1816,12 @@
 		(uuid "9bb73bd0-cb89-4aed-b0a2-918bcfbf12e8")
 	)
 	(junction
+		(at 312.42 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9db9c1d7-1cbe-4a3a-a691-01f2e23737b2")
+	)
+	(junction
 		(at 160.02 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1778,6 +1832,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9f77992a-10a4-4e0d-be95-82fa1207748a")
+	)
+	(junction
+		(at 275.59 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4abcc8e-7414-47d0-8a79-1d4e3e92a105")
 	)
 	(junction
 		(at 300.99 102.87)
@@ -1840,10 +1900,22 @@
 		(uuid "bf5193ff-2519-42ba-b2ba-9e037e28dfaa")
 	)
 	(junction
+		(at 287.02 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5c83d14-2dcb-45c2-b067-f170dfad26ca")
+	)
+	(junction
 		(at 300.99 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8043730-d708-49b2-8684-cf7be124d993")
+	)
+	(junction
+		(at 337.82 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9048966-7f83-4254-87c2-77b1401ec8f3")
 	)
 	(junction
 		(at 199.39 83.82)
@@ -2223,6 +2295,16 @@
 	)
 	(wire
 		(pts
+			(xy 347.98 95.25) (xy 351.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21626a19-49f7-4d49-affb-07b774098e76")
+	)
+	(wire
+		(pts
 			(xy 337.82 48.26) (xy 337.82 76.2)
 		)
 		(stroke
@@ -2323,6 +2405,16 @@
 	)
 	(wire
 		(pts
+			(xy 275.59 158.75) (xy 300.99 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3266a350-8c33-444e-b27b-65ce0de7dcf0")
+	)
+	(wire
+		(pts
 			(xy 236.22 95.25) (xy 236.22 114.3)
 		)
 		(stroke
@@ -2363,7 +2455,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 132.08) (xy 299.72 132.08)
+			(xy 297.18 132.08) (xy 300.99 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2390,6 +2482,16 @@
 			(type default)
 		)
 		(uuid "3f9cc071-27b8-4c87-a4a3-9253993ba0be")
+	)
+	(wire
+		(pts
+			(xy 271.78 151.13) (xy 275.59 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40e19d80-85f4-45b6-a41d-58b94e0dfb59")
 	)
 	(wire
 		(pts
@@ -2513,7 +2615,7 @@
 	)
 	(wire
 		(pts
-			(xy 297.18 114.3) (xy 299.72 114.3)
+			(xy 297.18 114.3) (xy 300.99 114.3)
 		)
 		(stroke
 			(width 0)
@@ -2573,6 +2675,16 @@
 	)
 	(wire
 		(pts
+			(xy 322.58 132.08) (xy 325.12 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a145283-26c0-4a16-b8e6-63912b01dbba")
+	)
+	(wire
+		(pts
 			(xy 236.22 132.08) (xy 236.22 151.13)
 		)
 		(stroke
@@ -2583,13 +2695,23 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 139.7) (xy 299.72 139.7)
+			(xy 274.32 139.7) (xy 300.99 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "633e9d64-1c03-4831-9461-cdb6a8492112")
+	)
+	(wire
+		(pts
+			(xy 312.42 95.25) (xy 312.42 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "636d743c-7e36-4f3e-a5f3-f34113f8b100")
 	)
 	(wire
 		(pts
@@ -2643,7 +2765,7 @@
 	)
 	(wire
 		(pts
-			(xy 274.32 121.92) (xy 299.72 121.92)
+			(xy 274.32 121.92) (xy 300.99 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2823,6 +2945,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 132.08) (xy 261.62 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "882a20ec-9ba9-426b-bec2-39c45a55a246")
+	)
+	(wire
+		(pts
 			(xy 160.02 95.25) (xy 160.02 114.3)
 		)
 		(stroke
@@ -2863,6 +2995,16 @@
 	)
 	(wire
 		(pts
+			(xy 287.02 132.08) (xy 287.02 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f689984-3815-42f0-ab26-e3af1794cffe")
+	)
+	(wire
+		(pts
 			(xy 220.98 132.08) (xy 224.79 132.08)
 		)
 		(stroke
@@ -2900,6 +3042,26 @@
 			(type default)
 		)
 		(uuid "925e0647-5a6b-46ec-8ba0-796e148f1b55")
+	)
+	(wire
+		(pts
+			(xy 300.99 121.92) (xy 326.39 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93dd527e-ee4d-49d5-8c2b-439f1dcdb6d2")
+	)
+	(wire
+		(pts
+			(xy 325.12 139.7) (xy 351.79 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "946107aa-7b2b-4ca6-9663-53369002823d")
 	)
 	(wire
 		(pts
@@ -3053,6 +3215,16 @@
 	)
 	(wire
 		(pts
+			(xy 322.58 114.3) (xy 326.39 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08c18fd-cab8-48e3-a78c-b718fbca6b1a")
+	)
+	(wire
+		(pts
 			(xy 223.52 121.92) (xy 248.92 121.92)
 		)
 		(stroke
@@ -3090,6 +3262,16 @@
 			(type default)
 		)
 		(uuid "a5487a8c-c12e-4613-af37-ff0a9a37f43d")
+	)
+	(wire
+		(pts
+			(xy 297.18 151.13) (xy 300.99 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9ade958-a543-4a11-b1d5-9766e0b8c0d5")
 	)
 	(wire
 		(pts
@@ -3173,6 +3355,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 114.3) (xy 312.42 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1adb8aa-7f80-4e32-9d15-084b0d2ede3d")
+	)
+	(wire
+		(pts
 			(xy 236.22 114.3) (xy 236.22 132.08)
 		)
 		(stroke
@@ -3200,6 +3392,26 @@
 			(type default)
 		)
 		(uuid "b60e6022-9ab0-4148-8870-1c34307ceaed")
+	)
+	(wire
+		(pts
+			(xy 326.39 102.87) (xy 351.79 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b768efba-b60c-4105-b53d-3393b3b4a49e")
+	)
+	(wire
+		(pts
+			(xy 347.98 132.08) (xy 351.79 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8443414-8e34-4e8e-a89f-2093cef4e210")
 	)
 	(wire
 		(pts
@@ -3323,6 +3535,26 @@
 	)
 	(wire
 		(pts
+			(xy 300.99 139.7) (xy 325.12 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3fcd723-fb10-4760-894b-439edf29df64")
+	)
+	(wire
+		(pts
+			(xy 250.19 158.75) (xy 275.59 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4bb91f7-9324-4d26-aa19-c820f6b8a5de")
+	)
+	(wire
+		(pts
 			(xy 109.22 132.08) (xy 109.22 151.13)
 		)
 		(stroke
@@ -3350,6 +3582,16 @@
 			(type default)
 		)
 		(uuid "cb1311ee-e4c7-44ac-94b0-747332910d55")
+	)
+	(wire
+		(pts
+			(xy 337.82 76.2) (xy 337.82 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd2f70dd-df15-4410-aac8-8688a306d24c")
 	)
 	(wire
 		(pts
@@ -3520,6 +3762,16 @@
 			(type default)
 		)
 		(uuid "ddcc292b-0d79-4104-b141-bf53cdde8bff")
+	)
+	(wire
+		(pts
+			(xy 337.82 95.25) (xy 337.82 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0551cf6-2e54-415b-a9d5-b7ccefaf62a2")
 	)
 	(wire
 		(pts
@@ -4398,6 +4650,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 224.79 154.94 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4405,7 +4658,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0025b66f-4a7c-4c63-9a21-6aff87762b78")
-		(property "Reference" "D49"
+		(property "Reference" "D54"
 			(at 227.33 153.6699 90)
 			(effects
 				(font
@@ -4477,7 +4730,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D49")
+					(reference "D54")
 					(unit 1)
 				)
 			)
@@ -4486,6 +4739,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 173.99 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4493,7 +4747,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "007d6052-3d3b-4b9d-85d5-b72adfdad54c")
-		(property "Reference" "D3"
+		(property "Reference" "D02"
 			(at 176.53 60.9599 90)
 			(effects
 				(font
@@ -4565,7 +4819,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D3")
+					(reference "D02")
 					(unit 1)
 				)
 			)
@@ -4574,6 +4828,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 148.59 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4581,7 +4836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "007ecdeb-1900-4277-b307-b11095d06544")
-		(property "Reference" "D38"
+		(property "Reference" "D41"
 			(at 151.13 134.6199 90)
 			(effects
 				(font
@@ -4653,7 +4908,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D38")
+					(reference "D41")
 					(unit 1)
 				)
 			)
@@ -4662,6 +4917,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 300.99 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4669,7 +4925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "010769aa-af2c-43e7-83a4-c9bcdb879b26")
-		(property "Reference" "D8"
+		(property "Reference" "D07"
 			(at 303.53 60.9599 90)
 			(effects
 				(font
@@ -4741,7 +4997,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D8")
+					(reference "D07")
 					(unit 1)
 				)
 			)
@@ -4757,7 +5013,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01f7376e-38e3-4822-8d42-cb639d951aea")
-		(property "Reference" "SW37"
+		(property "Reference" "SW40"
 			(at 114.3 124.46 0)
 			(effects
 				(font
@@ -4809,7 +5065,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW37")
+					(reference "SW40")
 					(unit 1)
 				)
 			)
@@ -4818,6 +5074,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 224.79 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4825,7 +5082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0291956f-20aa-46d4-aedd-af0bde64b42e")
-		(property "Reference" "D5"
+		(property "Reference" "D04"
 			(at 227.33 60.9599 90)
 			(effects
 				(font
@@ -4897,7 +5154,164 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D5")
+					(reference "D04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 275.59 154.94 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "032a1b92-b7ec-4c05-9768-97fad5ccdd62")
+		(property "Reference" "D56"
+			(at 278.13 153.6699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 278.13 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 275.59 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 275.59 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 275.59 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 275.59 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 275.59 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aeba3b7d-d04a-47e4-b18f-2b131feca7b7")
+		)
+		(pin "2"
+			(uuid "f2c379f4-7282-4015-90ee-240f836823ec")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "D56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 317.5 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04653d0b-4b70-44f6-8cd3-f5b794370f23")
+		(property "Reference" "SW48"
+			(at 317.5 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 317.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+			(at 317.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 317.5 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "456508fd-c67b-4e0d-8d12-8c5d7e08bab6")
+		)
+		(pin "2"
+			(uuid "1c6926b3-eb01-4ed3-b505-603a2518e8b0")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "SW48")
 					(unit 1)
 				)
 			)
@@ -4906,6 +5320,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 198.12 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4913,7 +5328,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0531bf9b-1f2a-41d2-aa10-6ab7990c9f08")
-		(property "Reference" "D32"
+		(property "Reference" "D33"
 			(at 200.66 116.8399 90)
 			(effects
 				(font
@@ -4985,7 +5400,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D32")
+					(reference "D33")
 					(unit 1)
 				)
 			)
@@ -4994,6 +5409,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 224.79 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5001,7 +5417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0650d91c-0a0e-41a4-920e-76922249d005")
-		(property "Reference" "D41"
+		(property "Reference" "D44"
 			(at 227.33 134.6199 90)
 			(effects
 				(font
@@ -5073,7 +5489,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D41")
+					(reference "D44")
 					(unit 1)
 				)
 			)
@@ -5157,7 +5573,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0849026f-2017-48bd-858e-fd2b7bda3711")
-		(property "Reference" "SW30"
+		(property "Reference" "SW31"
 			(at 139.7 106.68 0)
 			(effects
 				(font
@@ -5209,7 +5625,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW30")
+					(reference "SW31")
 					(unit 1)
 				)
 			)
@@ -5225,7 +5641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c65659d-c3f7-43e0-b3f5-26a10ac19154")
-		(property "Reference" "SW3"
+		(property "Reference" "SW02"
 			(at 165.1 50.8 0)
 			(effects
 				(font
@@ -5277,7 +5693,96 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW3")
+					(reference "SW02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 326.39 118.11 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dc8253b-fa7d-4c27-89f5-9378e5cfa05c")
+		(property "Reference" "D38"
+			(at 328.93 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 328.93 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 326.39 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 326.39 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 326.39 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 326.39 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 326.39 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9809a279-973b-4cff-9814-880a3e0bbe9d")
+		)
+		(pin "2"
+			(uuid "e32c3717-a703-47b0-be76-93fdaf7486c9")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "D38")
 					(unit 1)
 				)
 			)
@@ -5286,6 +5791,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 250.19 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5381,7 +5887,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "221b5041-e539-45da-9cda-6e14b32e535b")
-		(property "Reference" "SW40"
+		(property "Reference" "SW43"
 			(at 190.5 124.46 0)
 			(effects
 				(font
@@ -5433,7 +5939,75 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW40")
+					(reference "SW43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 266.7 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22ea7bea-8286-4f07-a128-b6daa209df7c")
+		(property "Reference" "SW56"
+			(at 266.7 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 266.7 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e077be4-f01e-4a6c-9c00-5e5a8be383c7")
+		)
+		(pin "2"
+			(uuid "47c136eb-649c-4fca-910a-91823f4b171d")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "SW56")
 					(unit 1)
 				)
 			)
@@ -5442,6 +6016,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 274.32 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5449,7 +6024,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25568e2b-402e-4948-8874-8455a7bf3cb8")
-		(property "Reference" "D43"
+		(property "Reference" "D46"
 			(at 276.86 134.6199 90)
 			(effects
 				(font
@@ -5521,7 +6096,96 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D43")
+					(reference "D46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 351.79 99.06 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "256322fd-307d-4376-b575-0e91c4ee93b0")
+		(property "Reference" "D29"
+			(at 354.33 97.7899 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 354.33 100.3299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 351.79 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 351.79 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 351.79 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 351.79 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 351.79 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4d706b7-96a8-47ba-b15b-d212bbd36f95")
+		)
+		(pin "2"
+			(uuid "87a97061-5b1b-40c8-8c58-9154fdee1358")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "D29")
 					(unit 1)
 				)
 			)
@@ -5530,6 +6194,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 275.59 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5537,7 +6202,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "268f11fa-6790-4926-9b1b-4b13f222a95f")
-		(property "Reference" "D7"
+		(property "Reference" "D06"
 			(at 278.13 60.9599 90)
 			(effects
 				(font
@@ -5609,7 +6274,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D7")
+					(reference "D06")
 					(unit 1)
 				)
 			)
@@ -5686,6 +6351,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 351.79 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5849,7 +6515,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2aeb6acb-430f-48f1-9a44-b944d710f123")
-		(property "Reference" "SW31"
+		(property "Reference" "SW32"
 			(at 165.1 106.68 0)
 			(effects
 				(font
@@ -5901,7 +6567,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW31")
+					(reference "SW32")
 					(unit 1)
 				)
 			)
@@ -5910,6 +6576,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 250.19 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5917,7 +6584,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f2bec34-9dea-4389-a472-4417087b6cdb")
-		(property "Reference" "D42"
+		(property "Reference" "D45"
 			(at 252.73 134.6199 90)
 			(effects
 				(font
@@ -5989,7 +6656,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D42")
+					(reference "D45")
 					(unit 1)
 				)
 			)
@@ -6073,7 +6740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3021fe35-1466-4370-8da3-d4e52e42c146")
-		(property "Reference" "SW36"
+		(property "Reference" "SW37"
 			(at 292.1 106.68 0)
 			(effects
 				(font
@@ -6125,7 +6792,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW36")
+					(reference "SW37")
 					(unit 1)
 				)
 			)
@@ -6200,8 +6867,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 342.9 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32f32866-e9fe-4d14-a4a2-77b37f0fa735")
+		(property "Reference" "SW29"
+			(at 342.9 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 342.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+			(at 342.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 342.9 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebaf4e92-c21d-4035-9e5b-cd46f744264a")
+		)
+		(pin "2"
+			(uuid "d72be9e1-215d-481e-9875-703203963bc8")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "SW29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 250.19 154.94 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6209,7 +6945,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37d35542-f1c7-413a-95dd-4a03605f9d5e")
-		(property "Reference" "D50"
+		(property "Reference" "D55"
 			(at 252.73 153.6699 90)
 			(effects
 				(font
@@ -6281,7 +7017,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D50")
+					(reference "D55")
 					(unit 1)
 				)
 			)
@@ -6290,6 +7026,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 248.92 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6297,7 +7034,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37dbb298-23d7-4ff7-85cd-2f044760aa88")
-		(property "Reference" "D34"
+		(property "Reference" "D35"
 			(at 251.46 116.8399 90)
 			(effects
 				(font
@@ -6369,7 +7106,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D34")
+					(reference "D35")
 					(unit 1)
 				)
 			)
@@ -6378,6 +7115,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 173.99 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6609,7 +7347,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e65ea3e-f4de-45d7-87da-e2c911fe38cb")
-		(property "Reference" "SW48"
+		(property "Reference" "SW53"
 			(at 190.5 143.51 0)
 			(effects
 				(font
@@ -6661,7 +7399,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW48")
+					(reference "SW53")
 					(unit 1)
 				)
 			)
@@ -6736,6 +7474,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 300.99 154.94 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "401f0629-d388-4cdf-a554-82f2350fc3b7")
+		(property "Reference" "D57"
+			(at 303.53 153.6699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 303.53 156.2099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 300.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 300.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 300.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 300.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 300.99 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8fbfb1f3-583a-4b9f-bb20-3cfbc276d38d")
+		)
+		(pin "2"
+			(uuid "59e9a4bb-9eb3-491e-833f-bcef3685f157")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "D57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 139.7 151.13 0)
 		(unit 1)
@@ -6745,7 +7572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41e13dce-c6d3-4690-b4db-f864264d2bec")
-		(property "Reference" "SW46"
+		(property "Reference" "SW51"
 			(at 139.7 143.51 0)
 			(effects
 				(font
@@ -6797,7 +7624,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW46")
+					(reference "SW51")
 					(unit 1)
 				)
 			)
@@ -6813,7 +7640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "458e1c28-8fea-4eee-8ae1-d75c07c70b0a")
-		(property "Reference" "SW35"
+		(property "Reference" "SW36"
 			(at 266.7 106.68 0)
 			(effects
 				(font
@@ -6865,7 +7692,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW35")
+					(reference "SW36")
 					(unit 1)
 				)
 			)
@@ -6881,7 +7708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d31cca-c0d8-4367-86ab-a323d695bc6b")
-		(property "Reference" "SW43"
+		(property "Reference" "SW46"
 			(at 266.7 124.46 0)
 			(effects
 				(font
@@ -6933,7 +7760,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW43")
+					(reference "SW46")
 					(unit 1)
 				)
 			)
@@ -6942,6 +7769,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 148.59 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7103,7 +7931,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53f4068a-720b-44b0-9cf2-a342f7ade777")
-		(property "Reference" "SW42"
+		(property "Reference" "SW45"
 			(at 241.3 124.46 0)
 			(effects
 				(font
@@ -7155,7 +7983,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW42")
+					(reference "SW45")
 					(unit 1)
 				)
 			)
@@ -7171,7 +7999,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "548a096c-b97e-4126-8374-d5c244172ef7")
-		(property "Reference" "SW33"
+		(property "Reference" "SW34"
 			(at 215.9 106.68 0)
 			(effects
 				(font
@@ -7223,7 +8051,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW33")
+					(reference "SW34")
 					(unit 1)
 				)
 			)
@@ -7231,7 +8059,8 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 299.72 135.89 90)
+		(at 300.99 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7239,8 +8068,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "55febbb6-c8fa-4b3e-b98a-35c4867f69d1")
-		(property "Reference" "D44"
-			(at 302.26 134.6199 90)
+		(property "Reference" "D47"
+			(at 303.53 134.6199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7249,7 +8078,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 302.26 137.1599 90)
+			(at 303.53 137.1599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7258,7 +8087,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 299.72 135.89 0)
+			(at 300.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7267,7 +8096,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 299.72 135.89 0)
+			(at 300.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7276,7 +8105,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 299.72 135.89 0)
+			(at 300.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7285,7 +8114,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 299.72 135.89 0)
+			(at 300.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7294,7 +8123,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 299.72 135.89 0)
+			(at 300.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7311,7 +8140,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D44")
+					(reference "D47")
 					(unit 1)
 				)
 			)
@@ -7320,6 +8149,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 250.19 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7327,7 +8157,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5897be76-ca78-48fd-a6da-87460d7ec76c")
-		(property "Reference" "D6"
+		(property "Reference" "D05"
 			(at 252.73 60.9599 90)
 			(effects
 				(font
@@ -7399,7 +8229,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D6")
+					(reference "D05")
 					(unit 1)
 				)
 			)
@@ -7408,6 +8238,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 147.32 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7415,7 +8246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fc6884a-4a37-4c3f-8024-d3dae8b09942")
-		(property "Reference" "D30"
+		(property "Reference" "D31"
 			(at 149.86 116.8399 90)
 			(effects
 				(font
@@ -7487,7 +8318,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D30")
+					(reference "D31")
 					(unit 1)
 				)
 			)
@@ -7571,7 +8402,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "637bb604-258c-4ba0-a8ef-168215952b98")
-		(property "Reference" "SW34"
+		(property "Reference" "SW35"
 			(at 241.3 106.68 0)
 			(effects
 				(font
@@ -7623,7 +8454,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW34")
+					(reference "SW35")
 					(unit 1)
 				)
 			)
@@ -7700,6 +8531,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 123.19 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7788,6 +8620,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 199.39 154.94 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7795,7 +8628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7136e417-b81c-4c1b-a9d4-f19673c7166c")
-		(property "Reference" "D48"
+		(property "Reference" "D53"
 			(at 201.93 153.6699 90)
 			(effects
 				(font
@@ -7867,7 +8700,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D48")
+					(reference "D53")
 					(unit 1)
 				)
 			)
@@ -7883,7 +8716,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "71d76305-4c28-4e51-8f7c-2e61aef3d30d")
-		(property "Reference" "SW7"
+		(property "Reference" "SW06"
 			(at 266.7 50.8 0)
 			(effects
 				(font
@@ -7935,7 +8768,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW7")
+					(reference "SW06")
 					(unit 1)
 				)
 			)
@@ -7944,6 +8777,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 121.92 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7951,7 +8785,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "726fbf5d-edb0-4b4e-86e5-3cc760149faa")
-		(property "Reference" "D37"
+		(property "Reference" "D40"
 			(at 124.46 134.6199 90)
 			(effects
 				(font
@@ -8023,7 +8857,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D37")
+					(reference "D40")
 					(unit 1)
 				)
 			)
@@ -8039,7 +8873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74cf2a20-696b-46c0-b32b-f3b81b5f5a50")
-		(property "Reference" "SW1"
+		(property "Reference" "SW00"
 			(at 114.3 50.8 0)
 			(effects
 				(font
@@ -8091,7 +8925,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW1")
+					(reference "SW00")
 					(unit 1)
 				)
 			)
@@ -8100,6 +8934,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 173.99 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8256,6 +9091,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 148.59 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8263,7 +9099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bcd9cf8-4ac1-4c17-82ec-a03d1a0148a8")
-		(property "Reference" "D2"
+		(property "Reference" "D01"
 			(at 151.13 60.9599 90)
 			(effects
 				(font
@@ -8335,7 +9171,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D2")
+					(reference "D01")
 					(unit 1)
 				)
 			)
@@ -8344,6 +9180,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 148.59 154.94 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8351,7 +9188,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f38cf35-bc87-47af-bff6-d3e6b5db0dec")
-		(property "Reference" "D46"
+		(property "Reference" "D51"
 			(at 151.13 153.6699 90)
 			(effects
 				(font
@@ -8423,7 +9260,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D46")
+					(reference "D51")
 					(unit 1)
 				)
 			)
@@ -8500,6 +9337,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 326.39 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8588,6 +9426,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 172.72 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8595,7 +9434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8573e89e-c429-4c1a-af43-b69880324fa0")
-		(property "Reference" "D31"
+		(property "Reference" "D32"
 			(at 175.26 116.8399 90)
 			(effects
 				(font
@@ -8667,7 +9506,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D31")
+					(reference "D32")
 					(unit 1)
 				)
 			)
@@ -8683,7 +9522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "863d8ffc-9358-42e6-8a44-5567c06d5257")
-		(property "Reference" "SW29"
+		(property "Reference" "SW30"
 			(at 114.3 106.68 0)
 			(effects
 				(font
@@ -8735,7 +9574,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW29")
+					(reference "SW30")
 					(unit 1)
 				)
 			)
@@ -8744,6 +9583,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 173.99 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8751,7 +9591,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8864beee-9960-444f-ae51-1d92c036bb8e")
-		(property "Reference" "D39"
+		(property "Reference" "D42"
 			(at 176.53 134.6199 90)
 			(effects
 				(font
@@ -8823,7 +9663,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D39")
+					(reference "D42")
 					(unit 1)
 				)
 			)
@@ -8839,7 +9679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89060771-2836-4e58-9784-1527b6029ddf")
-		(property "Reference" "SW47"
+		(property "Reference" "SW52"
 			(at 165.1 143.51 0)
 			(effects
 				(font
@@ -8891,7 +9731,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW47")
+					(reference "SW52")
 					(unit 1)
 				)
 			)
@@ -8900,6 +9740,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 300.99 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8988,6 +9829,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 224.79 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9075,7 +9917,8 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 299.72 118.11 90)
+		(at 300.99 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9083,8 +9926,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e92d6cf-1206-4aa8-beea-7ae4ab08a227")
-		(property "Reference" "D36"
-			(at 302.26 116.8399 90)
+		(property "Reference" "D37"
+			(at 303.53 116.8399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9093,7 +9936,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 302.26 119.3799 90)
+			(at 303.53 119.3799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9102,7 +9945,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 299.72 118.11 0)
+			(at 300.99 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9111,7 +9954,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 299.72 118.11 0)
+			(at 300.99 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9120,7 +9963,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 299.72 118.11 0)
+			(at 300.99 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9129,7 +9972,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 299.72 118.11 0)
+			(at 300.99 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9138,7 +9981,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 299.72 118.11 0)
+			(at 300.99 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9155,7 +9998,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D36")
+					(reference "D37")
 					(unit 1)
 				)
 			)
@@ -9164,6 +10007,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 123.19 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9252,6 +10096,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 121.92 154.94 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9259,7 +10104,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "920ca584-9111-4516-9059-de1e276c48d5")
-		(property "Reference" "D45"
+		(property "Reference" "D50"
 			(at 124.46 153.6699 90)
 			(effects
 				(font
@@ -9331,7 +10176,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D45")
+					(reference "D50")
 					(unit 1)
 				)
 			)
@@ -9340,6 +10185,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 199.39 135.89 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9347,7 +10193,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9364f097-396f-47d8-aa9f-508578f570f4")
-		(property "Reference" "D40"
+		(property "Reference" "D43"
 			(at 201.93 134.6199 90)
 			(effects
 				(font
@@ -9419,7 +10265,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D40")
+					(reference "D43")
 					(unit 1)
 				)
 			)
@@ -9435,7 +10281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95148be6-d4d0-4563-9be9-7575aed762f9")
-		(property "Reference" "SW44"
+		(property "Reference" "SW47"
 			(at 292.1 124.46 0)
 			(effects
 				(font
@@ -9487,7 +10333,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW44")
+					(reference "SW47")
 					(unit 1)
 				)
 			)
@@ -9571,7 +10417,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a2fa29f-668e-4b47-a8ff-60d76ebca06c")
-		(property "Reference" "SW39"
+		(property "Reference" "SW42"
 			(at 165.1 124.46 0)
 			(effects
 				(font
@@ -9623,7 +10469,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW39")
+					(reference "SW42")
 					(unit 1)
 				)
 			)
@@ -9632,6 +10478,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 121.92 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9639,7 +10486,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a80af45-b4d3-45ef-be8e-b0235e0b76da")
-		(property "Reference" "D29"
+		(property "Reference" "D30"
 			(at 124.46 116.8399 90)
 			(effects
 				(font
@@ -9711,7 +10558,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D29")
+					(reference "D30")
 					(unit 1)
 				)
 			)
@@ -9720,6 +10567,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 173.99 154.94 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9727,7 +10575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a88ce5d-4404-48a7-bc4a-75a4981cd75a")
-		(property "Reference" "D47"
+		(property "Reference" "D52"
 			(at 176.53 153.6699 90)
 			(effects
 				(font
@@ -9799,7 +10647,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D47")
+					(reference "D52")
 					(unit 1)
 				)
 			)
@@ -9860,7 +10708,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "9ff96bb1-dbaf-43c1-b9b6-c527436445d8")
+			(uuid "9ff96bb1-dbaf-43c1-b9b6-c527436445d9")
 		)
 		(instances
 			(project ""
@@ -9881,7 +10729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a07425cc-c652-4c4d-8f45-2bbcd391863b")
-		(property "Reference" "SW2"
+		(property "Reference" "SW01"
 			(at 139.7 50.8 0)
 			(effects
 				(font
@@ -9933,7 +10781,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW2")
+					(reference "SW01")
 					(unit 1)
 				)
 			)
@@ -9942,6 +10790,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 148.59 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10029,7 +10878,97 @@
 	)
 	(symbol
 		(lib_id "Device:D")
+		(at 325.12 135.89 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7c58139-e9e5-4325-a4ef-80a0f7b74b51")
+		(property "Reference" "D48"
+			(at 327.66 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 327.66 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 325.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 325.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 325.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 325.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 325.12 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ac34da8-1f27-4d38-b919-7c5cf2f7c465")
+		)
+		(pin "2"
+			(uuid "f49f6531-e62c-4b92-bbd2-86d3cb7f6f5f")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "D48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
 		(at 275.59 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10118,6 +11057,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 199.39 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10125,7 +11065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4daa7f0-5733-4c58-a001-d5f661d6a938")
-		(property "Reference" "D4"
+		(property "Reference" "D03"
 			(at 201.93 60.9599 90)
 			(effects
 				(font
@@ -10197,7 +11137,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D4")
+					(reference "D03")
 					(unit 1)
 				)
 			)
@@ -10213,7 +11153,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b763c16d-f448-48f5-b003-e0e66b18195f")
-		(property "Reference" "SW4"
+		(property "Reference" "SW03"
 			(at 190.5 50.8 0)
 			(effects
 				(font
@@ -10265,7 +11205,143 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW4")
+					(reference "SW03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 292.1 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b77dfe2c-901e-4dfc-91ce-0c9123cc03e0")
+		(property "Reference" "SW57"
+			(at 292.1 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 292.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+			(at 292.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 292.1 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 292.1 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4955a55-0f8d-4916-931e-1ec0f7c8a22e")
+		)
+		(pin "2"
+			(uuid "f6c8ec00-8227-4e34-8627-a615dfd965d5")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "SW57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 342.9 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7cfe02f-2603-496c-8d5f-3d26e88203b5")
+		(property "Reference" "SW49"
+			(at 342.9 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 342.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+			(at 342.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 342.9 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3a1bfe57-0e2e-4010-abf9-72e03961ada8")
+		)
+		(pin "2"
+			(uuid "dbbd12e4-58c9-46f3-801e-90c5952e7c3c")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "SW49")
 					(unit 1)
 				)
 			)
@@ -10274,6 +11350,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 199.39 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10362,6 +11439,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 275.59 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10450,6 +11528,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 223.52 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10457,7 +11536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c29516f8-d7a4-4fed-8627-2439f9916d24")
-		(property "Reference" "D33"
+		(property "Reference" "D34"
 			(at 226.06 116.8399 90)
 			(effects
 				(font
@@ -10529,7 +11608,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D33")
+					(reference "D34")
 					(unit 1)
 				)
 			)
@@ -10545,7 +11624,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c59609e1-919d-4b37-924e-e0f32e637df8")
-		(property "Reference" "SW41"
+		(property "Reference" "SW44"
 			(at 215.9 124.46 0)
 			(effects
 				(font
@@ -10597,7 +11676,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW41")
+					(reference "SW44")
 					(unit 1)
 				)
 			)
@@ -10613,7 +11692,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cb57a752-38af-43a3-bd44-657865ad0fd6")
-		(property "Reference" "SW38"
+		(property "Reference" "SW41"
 			(at 139.7 124.46 0)
 			(effects
 				(font
@@ -10665,7 +11744,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW38")
+					(reference "SW41")
 					(unit 1)
 				)
 			)
@@ -10674,6 +11753,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 326.39 99.06 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10769,7 +11849,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cddbecbd-facd-49f7-883f-339750d8225a")
-		(property "Reference" "SW49"
+		(property "Reference" "SW54"
 			(at 215.9 143.51 0)
 			(effects
 				(font
@@ -10821,7 +11901,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW49")
+					(reference "SW54")
 					(unit 1)
 				)
 			)
@@ -10837,7 +11917,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d03005b6-dfc5-4b7c-92b1-23f0630e4d61")
-		(property "Reference" "SW9"
+		(property "Reference" "SW08"
 			(at 317.5 50.8 0)
 			(effects
 				(font
@@ -10889,7 +11969,96 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW9")
+					(reference "SW08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 351.79 135.89 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3b060ec-23e8-4502-be92-33b725d26ef9")
+		(property "Reference" "D49"
+			(at 354.33 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 354.33 137.1599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 351.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 351.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 351.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 351.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 351.79 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6d18448-fd8b-4225-a852-1875ea79aa5c")
+		)
+		(pin "2"
+			(uuid "f7fc0d6b-76a7-4780-bca9-b3ddb518d1c5")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "D49")
 					(unit 1)
 				)
 			)
@@ -10966,6 +12135,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 326.39 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10973,7 +12143,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d6711f36-c2f9-4ba5-9817-af5a51018cfc")
-		(property "Reference" "D9"
+		(property "Reference" "D08"
 			(at 328.93 60.9599 90)
 			(effects
 				(font
@@ -11045,7 +12215,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D9")
+					(reference "D08")
 					(unit 1)
 				)
 			)
@@ -11122,6 +12292,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 199.39 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11210,6 +12381,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 300.99 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11298,6 +12470,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 250.19 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11393,7 +12566,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e23bda12-a153-4a86-915e-4b09a81088e4")
-		(property "Reference" "SW6"
+		(property "Reference" "SW05"
 			(at 241.3 50.8 0)
 			(effects
 				(font
@@ -11445,7 +12618,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW6")
+					(reference "SW05")
 					(unit 1)
 				)
 			)
@@ -11461,7 +12634,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e319fd4b-b8dc-48fa-a601-2b90c89eb7c5")
-		(property "Reference" "SW8"
+		(property "Reference" "SW07"
 			(at 292.1 50.8 0)
 			(effects
 				(font
@@ -11513,7 +12686,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW8")
+					(reference "SW07")
 					(unit 1)
 				)
 			)
@@ -11522,6 +12695,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 224.79 80.01 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11602,6 +12776,74 @@
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
 					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 317.5 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5aa1226-7e0c-41d2-87b6-2b971f3fed30")
+		(property "Reference" "SW38"
+			(at 317.5 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 317.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+			(at 317.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 317.5 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 317.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73056663-505c-4cff-b863-f7acc862250a")
+		)
+		(pin "2"
+			(uuid "dc833bc4-8fa7-40c8-a190-c04166628f54")
+		)
+		(instances
+			(project "ega-right-kb"
+				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
+					(reference "SW38")
 					(unit 1)
 				)
 			)
@@ -11801,7 +13043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8072a72-6ed1-4cbb-a230-ad4bb5baaadb")
-		(property "Reference" "SW5"
+		(property "Reference" "SW04"
 			(at 215.9 50.8 0)
 			(effects
 				(font
@@ -11853,7 +13095,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW5")
+					(reference "SW04")
 					(unit 1)
 				)
 			)
@@ -11937,7 +13179,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8d925df-cba0-471e-90ce-a95c4863ba68")
-		(property "Reference" "SW45"
+		(property "Reference" "SW50"
 			(at 114.3 143.51 0)
 			(effects
 				(font
@@ -11989,7 +13231,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW45")
+					(reference "SW50")
 					(unit 1)
 				)
 			)
@@ -11998,15 +13240,15 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 123.19 62.23 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "edc66894-d2c6-4305-acb8-77183d9f8c40")
-		(property "Reference" "D1"
-			(at 125.73 60.9599 90)
+		(property "Reference" "D00"
+			(at 125.476 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12015,7 +13257,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 125.73 63.4999 90)
+			(at 125.476 63.246 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12077,7 +13319,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D1")
+					(reference "D00")
 					(unit 1)
 				)
 			)
@@ -12093,7 +13335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7d791d0-f5cd-41a6-8c0e-c2548ec0cb76")
-		(property "Reference" "SW50"
+		(property "Reference" "SW55"
 			(at 241.3 143.51 0)
 			(effects
 				(font
@@ -12145,7 +13387,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW50")
+					(reference "SW55")
 					(unit 1)
 				)
 			)
@@ -12222,6 +13464,7 @@
 	(symbol
 		(lib_id "Device:D")
 		(at 274.32 118.11 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12229,7 +13472,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f95618de-6519-48e9-82b6-34ec32bb28ab")
-		(property "Reference" "D35"
+		(property "Reference" "D36"
 			(at 276.86 116.8399 90)
 			(effects
 				(font
@@ -12301,7 +13544,7 @@
 		(instances
 			(project "ega-right-kb"
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "D35")
+					(reference "D36")
 					(unit 1)
 				)
 			)
@@ -12453,7 +13696,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff7e2c87-7e43-4498-a899-70ce796bd2b4")
-		(property "Reference" "SW32"
+		(property "Reference" "SW33"
 			(at 190.5 106.68 0)
 			(effects
 				(font
@@ -12505,7 +13748,7 @@
 		(instances
 			(project ""
 				(path "/fff8ff65-804f-4ab7-8df4-d7ac0c0490a9"
-					(reference "SW32")
+					(reference "SW33")
 					(unit 1)
 				)
 			)
