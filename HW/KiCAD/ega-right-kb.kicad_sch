@@ -5029,7 +5029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 114.3 127 0)
 			(effects
 				(font
@@ -5275,7 +5275,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 317.5 127 0)
 			(effects
 				(font
@@ -5521,7 +5521,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 114.3 71.12 0)
 			(effects
 				(font
@@ -5589,7 +5589,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 139.7 109.22 0)
 			(effects
 				(font
@@ -5657,7 +5657,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 165.1 53.34 0)
 			(effects
 				(font
@@ -5903,7 +5903,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 190.5 127 0)
 			(effects
 				(font
@@ -5971,7 +5971,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 266.7 146.05 0)
 			(effects
 				(font
@@ -6306,7 +6306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 241.3 71.12 0)
 			(effects
 				(font
@@ -6463,7 +6463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 292.1 71.12 0)
 			(effects
 				(font
@@ -6531,7 +6531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 165.1 109.22 0)
 			(effects
 				(font
@@ -6688,7 +6688,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 342.9 71.12 0)
 			(effects
 				(font
@@ -6756,7 +6756,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 292.1 109.22 0)
 			(effects
 				(font
@@ -6824,7 +6824,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 139.7 90.17 0)
 			(effects
 				(font
@@ -6892,7 +6892,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 342.9 90.17 0)
 			(effects
 				(font
@@ -7227,7 +7227,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 215.9 90.17 0)
 			(effects
 				(font
@@ -7295,7 +7295,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 165.1 90.17 0)
 			(effects
 				(font
@@ -7363,7 +7363,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 190.5 146.05 0)
 			(effects
 				(font
@@ -7431,7 +7431,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 292.1 90.17 0)
 			(effects
 				(font
@@ -7588,7 +7588,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 139.7 146.05 0)
 			(effects
 				(font
@@ -7656,7 +7656,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 266.7 109.22 0)
 			(effects
 				(font
@@ -7724,7 +7724,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 266.7 127 0)
 			(effects
 				(font
@@ -7947,7 +7947,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 241.3 127 0)
 			(effects
 				(font
@@ -8015,7 +8015,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 215.9 109.22 0)
 			(effects
 				(font
@@ -8350,7 +8350,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 241.3 90.17 0)
 			(effects
 				(font
@@ -8418,7 +8418,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 241.3 109.22 0)
 			(effects
 				(font
@@ -8486,7 +8486,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 266.7 71.12 0)
 			(effects
 				(font
@@ -8732,7 +8732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 266.7 53.34 0)
 			(effects
 				(font
@@ -8889,7 +8889,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 114.3 53.34 0)
 			(effects
 				(font
@@ -9046,7 +9046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 190.5 90.17 0)
 			(effects
 				(font
@@ -9292,7 +9292,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 215.9 71.12 0)
 			(effects
 				(font
@@ -9538,7 +9538,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 114.3 109.22 0)
 			(effects
 				(font
@@ -9695,7 +9695,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 165.1 146.05 0)
 			(effects
 				(font
@@ -10297,7 +10297,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 292.1 127 0)
 			(effects
 				(font
@@ -10365,7 +10365,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 266.7 90.17 0)
 			(effects
 				(font
@@ -10433,7 +10433,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 165.1 127 0)
 			(effects
 				(font
@@ -10745,7 +10745,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 139.7 53.34 0)
 			(effects
 				(font
@@ -11169,7 +11169,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 190.5 53.34 0)
 			(effects
 				(font
@@ -11237,7 +11237,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 292.1 146.05 0)
 			(effects
 				(font
@@ -11305,7 +11305,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 342.9 127 0)
 			(effects
 				(font
@@ -11640,7 +11640,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 215.9 127 0)
 			(effects
 				(font
@@ -11708,7 +11708,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 139.7 127 0)
 			(effects
 				(font
@@ -11865,7 +11865,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 215.9 146.05 0)
 			(effects
 				(font
@@ -11933,7 +11933,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 317.5 53.34 0)
 			(effects
 				(font
@@ -12090,7 +12090,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 114.3 90.17 0)
 			(effects
 				(font
@@ -12247,7 +12247,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 317.5 90.17 0)
 			(effects
 				(font
@@ -12582,7 +12582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 241.3 53.34 0)
 			(effects
 				(font
@@ -12650,7 +12650,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 292.1 53.34 0)
 			(effects
 				(font
@@ -12807,7 +12807,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 317.5 109.22 0)
 			(effects
 				(font
@@ -13059,7 +13059,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 215.9 53.34 0)
 			(effects
 				(font
@@ -13127,7 +13127,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 190.5 71.12 0)
 			(effects
 				(font
@@ -13195,7 +13195,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 114.3 146.05 0)
 			(effects
 				(font
@@ -13351,7 +13351,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 241.3 146.05 0)
 			(effects
 				(font
@@ -13419,7 +13419,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 165.1 71.12 0)
 			(effects
 				(font
@@ -13576,7 +13576,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 317.5 71.12 0)
 			(effects
 				(font
@@ -13644,7 +13644,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 139.7 71.12 0)
 			(effects
 				(font
@@ -13712,7 +13712,7 @@
 				)
 			)
 		)
-		(property "Footprint" "KeySwitch:MX-Hotswap-1U"
+		(property "Footprint" "PCM_Switch_Keyboard_Hotswap_Kailh:SW_Hotswap_Kailh_MX_1.00u"
 			(at 190.5 109.22 0)
 			(effects
 				(font
