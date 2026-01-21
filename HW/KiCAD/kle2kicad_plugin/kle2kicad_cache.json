@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "last_settings": {
+    "origin_x": 50.0,
+    "origin_y": 50.0,
+    "sw_width": 19.05,
+    "sw_height": 19.05,
+    "place_diodes": true,
+    "diode_offset_x": 0.0,
+    "diode_offset_y": 8.5,
+    "diode_rotation": 180.0
+  },
+  "last_kle_file": "C:\\work\\keyboard\\ega-right-kb\\HW\\keyboard-layout-editor\\ega-right-kb-layout.json",
+  "history": [
+    {
+      "timestamp": "2026-01-21T20:40:02.010365",
+      "kle_file": "C:\\work\\keyboard\\ega-right-kb\\HW\\keyboard-layout-editor\\ega-right-kb-layout.json",
+      "pcb_file": "C:\\work\\keyboard\\ega-right-kb\\HW\\KiCAD\\ega-right-kb.kicad_pcb",
+      "settings": {
+        "origin_x": 50.0,
+        "origin_y": 50.0,
+        "sw_width": 19.05,
+        "sw_height": 19.05,
+        "place_diodes": true,
+        "diode_offset_x": 0.0,
+        "diode_offset_y": 8.5,
+        "diode_rotation": 180.0
+      },
+      "switches_placed": 56,
+      "diodes_placed": 56,
+      "warnings": 0,
+      "warning_messages": []
+    },
+    {
+      "timestamp": "2026-01-21T20:39:37.225673",
+      "kle_file": "C:\\work\\keyboard\\ega-right-kb\\HW\\keyboard-layout-editor\\ega-right-kb-layout.json",
+      "pcb_file": "C:/work/keyboard/ega-right-kb/HW/KiCAD/ega-right-kb.kicad_pcb",
+      "settings": {
+        "origin_x": 50.0,
+        "origin_y": 50.0,
+        "sw_width": 19.05,
+        "sw_height": 19.05,
+        "place_diodes": true,
+        "diode_offset_x": 0.0,
+        "diode_offset_y": 8.1,
+        "diode_rotation": 180.0
+      },
+      "switches_placed": 56,
+      "diodes_placed": 56,
+      "warnings": 0,
+      "warning_messages": []
+    }
+  ]
+}

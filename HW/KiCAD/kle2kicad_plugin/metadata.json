@@ -1,0 +1,25 @@
+{
+    "$schema": "https://go.kicad.org/pcm/schemas/v1",
+    "name": "KLE to KiCAD Layout",
+    "description": "Import keyboard layout from keyboard-layout-editor.com JSON and auto-place switch/diode footprints",
+    "description_full": "A KiCAD plugin that imports keyboard layouts from keyboard-layout-editor.com (KLE) JSON files and automatically positions switch (SW) and diode (D) footprints on your PCB.\n\nFeatures:\n- Parse KLE JSON format\n- Auto-place Cherry MX compatible switches\n- Auto-place associated diodes with configurable offset\n- Support for rotated keys\n- Support for different key sizes (1u, 1.5u, 2u, etc.)\n- GUI for configuration",
+    "identifier": "com.github.akiega.kle2kicad",
+    "type": "plugin",
+    "author": {
+        "name": "AkiEga",
+        "contact": {
+            "github": "https://github.com/AkiEga"
+        }
+    },
+    "license": "MIT",
+    "resources": {
+        "homepage": "https://github.com/AkiEga/ega-right-kb"
+    },
+    "versions": [
+        {
+            "version": "1.0.0",
+            "status": "development",
+            "kicad_version": "8.0"
+        }
+    ]
+}
