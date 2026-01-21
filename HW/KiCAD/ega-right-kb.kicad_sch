@@ -2026,10 +2026,6 @@
 		(uuid "ff86d6e5-211c-4e2e-932e-3a4d07a08ef7")
 	)
 	(no_connect
-		(at 27.94 90.17)
-		(uuid "07f6464e-c93a-4ad9-942c-d72a3a4bca1c")
-	)
-	(no_connect
 		(at 73.66 92.71)
 		(uuid "0d636c04-6afe-4b60-8bf6-3c21b7a67122")
 	)
@@ -2038,20 +2034,28 @@
 		(uuid "181216ff-02c1-4e49-8be8-e86d387913ff")
 	)
 	(no_connect
-		(at 73.66 95.25)
-		(uuid "3e60a9bf-0846-4b1e-aff4-7469df074a75")
+		(at 73.66 64.77)
+		(uuid "2c7b7d1a-e7f0-48f7-8466-3324367441e7")
 	)
 	(no_connect
-		(at 27.94 92.71)
-		(uuid "3f23d4ae-6ee8-4e10-ab01-7059825e6d68")
+		(at 73.66 72.39)
+		(uuid "34154cec-adc8-41a2-a2c5-d1a77b39ae75")
+	)
+	(no_connect
+		(at 73.66 95.25)
+		(uuid "3e60a9bf-0846-4b1e-aff4-7469df074a75")
 	)
 	(no_connect
 		(at 55.88 39.37)
 		(uuid "49903ee3-38d4-4e5c-ae77-f4bfcfd3c242")
 	)
 	(no_connect
-		(at 27.94 95.25)
-		(uuid "52601b3f-e4ae-45d3-ba79-c1e8fb04533d")
+		(at 73.66 74.93)
+		(uuid "72e06469-d92a-4c3e-bb52-ac820adf4692")
+	)
+	(no_connect
+		(at 73.66 69.85)
+		(uuid "734e7670-65e9-4d25-862c-410d53d391a4")
 	)
 	(no_connect
 		(at 73.66 80.01)
@@ -2066,24 +2070,16 @@
 		(uuid "85527e08-5c3e-4d9c-839a-de6dcbbb1cee")
 	)
 	(no_connect
-		(at 27.94 87.63)
-		(uuid "8e12d72e-81c0-4c36-8901-702a29206627")
-	)
-	(no_connect
 		(at 27.94 54.61)
 		(uuid "ae3696f7-e4af-48bc-ac21-1824bed18d8e")
-	)
-	(no_connect
-		(at 27.94 97.79)
-		(uuid "c600dbf0-21ee-4fa8-b492-a791bc83267d")
 	)
 	(no_connect
 		(at 27.94 57.15)
 		(uuid "cc3a53f7-74c2-4532-ae95-556cc1d271cd")
 	)
 	(no_connect
-		(at 27.94 100.33)
-		(uuid "e91f1d5d-d501-473e-af9c-19c555fe8d41")
+		(at 73.66 67.31)
+		(uuid "e9ef3323-19a7-4e36-877f-f3518e55d4c6")
 	)
 	(no_connect
 		(at 73.66 90.17)
@@ -2092,6 +2088,10 @@
 	(no_connect
 		(at 45.72 39.37)
 		(uuid "f3793581-d789-4847-82ec-dc463c585574")
+	)
+	(no_connect
+		(at 73.66 77.47)
+		(uuid "fbbda67b-6e9f-4670-bdd7-9701f5248cf0")
 	)
 	(wire
 		(pts
@@ -2105,23 +2105,13 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 74.93) (xy 73.66 74.93)
+			(xy 24.13 72.39) (xy 27.94 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "04406ffd-4fd3-4af5-8b61-5899198b0b14")
-	)
-	(wire
-		(pts
-			(xy 74.93 69.85) (xy 73.66 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04cf23f9-ad69-446e-b747-37ca26dd6ab4")
+		(uuid "0229fd8b-7122-45c2-b350-2f388255349a")
 	)
 	(wire
 		(pts
@@ -2165,16 +2155,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 67.31) (xy 27.94 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ec1a782-195e-4d71-b50f-473b71748723")
-	)
-	(wire
-		(pts
 			(xy 224.79 83.82) (xy 250.19 83.82)
 		)
 		(stroke
@@ -2215,13 +2195,13 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 64.77) (xy 73.66 64.77)
+			(xy 24.13 90.17) (xy 27.94 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "16f943dd-f602-42d3-825f-069a3773abb2")
+		(uuid "1739338e-8837-496f-add6-67ab4e21178c")
 	)
 	(wire
 		(pts
@@ -2232,16 +2212,6 @@
 			(type default)
 		)
 		(uuid "19317527-0401-405f-a008-a3fc9c8ddd09")
-	)
-	(wire
-		(pts
-			(xy 24.13 82.55) (xy 27.94 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c7c96fa-c2f2-4b68-8dd1-2b1a83ab3914")
 	)
 	(wire
 		(pts
@@ -2312,6 +2282,16 @@
 			(type default)
 		)
 		(uuid "24283b82-9d4b-4bba-bc5f-4c68e94a13ce")
+	)
+	(wire
+		(pts
+			(xy 24.13 92.71) (xy 27.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24f1dfc3-8bf5-4101-94a5-e34c5bcc21a5")
 	)
 	(wire
 		(pts
@@ -2405,6 +2385,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 80.01) (xy 27.94 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3035649b-0128-4b27-9e30-bcbbb0cb32af")
+	)
+	(wire
+		(pts
 			(xy 275.59 158.75) (xy 300.99 158.75)
 		)
 		(stroke
@@ -2422,6 +2412,16 @@
 			(type default)
 		)
 		(uuid "32a8d51d-0e1d-434e-be30-2ab49cb949f7")
+	)
+	(wire
+		(pts
+			(xy 24.13 100.33) (xy 27.94 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38138201-e86c-41d2-8b30-4542cf823d60")
 	)
 	(wire
 		(pts
@@ -2482,6 +2482,16 @@
 			(type default)
 		)
 		(uuid "3f9cc071-27b8-4c87-a4a3-9253993ba0be")
+	)
+	(wire
+		(pts
+			(xy 24.13 74.93) (xy 27.94 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fdd6698-f649-4b4c-8317-c05d815f5dee")
 	)
 	(wire
 		(pts
@@ -2645,16 +2655,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 69.85) (xy 27.94 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5681251e-af84-4d4a-a117-7323d4047a07")
-	)
-	(wire
-		(pts
 			(xy 109.22 58.42) (xy 109.22 76.2)
 		)
 		(stroke
@@ -2715,16 +2715,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 85.09) (xy 27.94 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6492e737-b65d-4775-93bd-26769e351670")
-	)
-	(wire
-		(pts
 			(xy 109.22 114.3) (xy 109.22 132.08)
 		)
 		(stroke
@@ -2755,13 +2745,23 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 62.23) (xy 27.94 62.23)
+			(xy 24.13 87.63) (xy 27.94 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65afa86f-fcdd-4f71-9c08-a92de8856589")
+		(uuid "6657c8fa-b3c5-4b22-bcc5-8ef48d9080a6")
+	)
+	(wire
+		(pts
+			(xy 24.13 85.09) (xy 27.94 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67dbbc06-3c5b-4851-aea1-1865545bf848")
 	)
 	(wire
 		(pts
@@ -2772,6 +2772,16 @@
 			(type default)
 		)
 		(uuid "6909fe76-df2a-4cce-9105-69bce4aeb8f4")
+	)
+	(wire
+		(pts
+			(xy 24.13 82.55) (xy 27.94 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b9f5c65-9f17-44ea-91d5-ac6255a98a78")
 	)
 	(wire
 		(pts
@@ -2822,6 +2832,16 @@
 			(type default)
 		)
 		(uuid "763d20c0-cce1-4871-8f55-41d67efaf145")
+	)
+	(wire
+		(pts
+			(xy 24.13 64.77) (xy 27.94 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77307fae-3488-4b76-bc7c-4674d891a77f")
 	)
 	(wire
 		(pts
@@ -3065,16 +3085,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 67.31) (xy 73.66 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95b6ef45-79b6-4d09-ae8f-f47bfd7dcc74")
-	)
-	(wire
-		(pts
 			(xy 199.39 158.75) (xy 224.79 158.75)
 		)
 		(stroke
@@ -3135,16 +3145,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 74.93) (xy 27.94 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9782edcb-38fc-440c-841c-ce8a3fbd91aa")
-	)
-	(wire
-		(pts
 			(xy 119.38 151.13) (xy 121.92 151.13)
 		)
 		(stroke
@@ -3175,16 +3175,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 72.39) (xy 27.94 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b76f783-50cd-4c0d-b36b-6a655d4d5138")
-	)
-	(wire
-		(pts
 			(xy 210.82 132.08) (xy 210.82 151.13)
 		)
 		(stroke
@@ -3202,16 +3192,6 @@
 			(type default)
 		)
 		(uuid "9dc0ded5-c25b-4e9b-a588-5360b61ac92a")
-	)
-	(wire
-		(pts
-			(xy 24.13 77.47) (xy 27.94 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e32ce34-c857-4bb4-9372-b169fb2ef99d")
 	)
 	(wire
 		(pts
@@ -3365,6 +3345,26 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 97.79) (xy 27.94 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2acab86-f73e-41b4-8a74-25be6ee482da")
+	)
+	(wire
+		(pts
+			(xy 24.13 69.85) (xy 27.94 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3811282-959e-46ad-8215-1dfad7aa2fba")
+	)
+	(wire
+		(pts
 			(xy 236.22 114.3) (xy 236.22 132.08)
 		)
 		(stroke
@@ -3442,6 +3442,16 @@
 			(type default)
 		)
 		(uuid "bb6b0cc8-714e-4aca-bbec-954e86515ede")
+	)
+	(wire
+		(pts
+			(xy 24.13 77.47) (xy 27.94 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc4f760d-e818-4b02-bc2b-ca5f75ccfc62")
 	)
 	(wire
 		(pts
@@ -3575,6 +3585,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 95.25) (xy 27.94 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca6f1433-0f2e-4895-b717-63a4c39282a2")
+	)
+	(wire
+		(pts
 			(xy 123.19 66.04) (xy 148.59 66.04)
 		)
 		(stroke
@@ -3592,16 +3612,6 @@
 			(type default)
 		)
 		(uuid "cd2f70dd-df15-4410-aac8-8688a306d24c")
-	)
-	(wire
-		(pts
-			(xy 24.13 80.01) (xy 27.94 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce0d1f65-8366-4a6a-9bb9-1ec7c1a1a9e5")
 	)
 	(wire
 		(pts
@@ -3735,16 +3745,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 64.77) (xy 27.94 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcadad56-7573-400e-8db8-7b2f1783910a")
-	)
-	(wire
-		(pts
 			(xy 271.78 132.08) (xy 274.32 132.08)
 		)
 		(stroke
@@ -3795,16 +3795,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 72.39) (xy 73.66 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8ee362c-ba80-4b9c-983b-b9c10a11aa1c")
-	)
-	(wire
-		(pts
 			(xy 287.02 58.42) (xy 287.02 76.2)
 		)
 		(stroke
@@ -3812,6 +3802,16 @@
 			(type default)
 		)
 		(uuid "e9f69c72-75f8-48b6-a7d7-dd96fd7049f5")
+	)
+	(wire
+		(pts
+			(xy 24.13 67.31) (xy 27.94 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb9cab7f-87e6-4c55-b523-95e60d94b26a")
 	)
 	(wire
 		(pts
@@ -3842,6 +3842,16 @@
 			(type default)
 		)
 		(uuid "eef0f230-ade8-44ce-8d2b-aac5bc82e189")
+	)
+	(wire
+		(pts
+			(xy 24.13 62.23) (xy 27.94 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efafee45-22d7-4a2c-86b8-ee44d6df484f")
 	)
 	(wire
 		(pts
@@ -3905,16 +3915,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 77.47) (xy 73.66 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "faee9102-c0bc-43e2-8367-a0eaf4ed402c")
-	)
-	(wire
-		(pts
 			(xy 275.59 102.87) (xy 300.99 102.87)
 		)
 		(stroke
@@ -3945,7 +3945,7 @@
 	)
 	(global_label "Col9"
 		(shape output)
-		(at 24.13 62.23 180)
+		(at 24.13 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3955,7 +3955,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 62.23 0)
+			(at 16.8511 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3967,7 +3967,7 @@
 	)
 	(global_label "Col7"
 		(shape output)
-		(at 24.13 67.31 180)
+		(at 24.13 95.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3977,7 +3977,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98dc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 67.31 0)
+			(at 16.8511 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3989,7 +3989,7 @@
 	)
 	(global_label "Col8"
 		(shape output)
-		(at 24.13 64.77 180)
+		(at 24.13 97.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3999,7 +3999,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 64.77 0)
+			(at 16.8511 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,7 +4011,7 @@
 	)
 	(global_label "Col6"
 		(shape output)
-		(at 24.13 69.85 180)
+		(at 24.13 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4021,7 +4021,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 69.85 0)
+			(at 16.8511 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4033,7 +4033,7 @@
 	)
 	(global_label "Col5"
 		(shape output)
-		(at 24.13 85.09 180)
+		(at 24.13 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4043,7 +4043,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98df")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 85.09 0)
+			(at 16.8511 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4055,7 +4055,7 @@
 	)
 	(global_label "Col4"
 		(shape output)
-		(at 24.13 82.55 180)
+		(at 24.13 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4065,7 +4065,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98e0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 82.55 0)
+			(at 16.8511 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4077,7 +4077,7 @@
 	)
 	(global_label "Col3"
 		(shape output)
-		(at 24.13 80.01 180)
+		(at 24.13 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4087,7 +4087,7 @@
 		)
 		(uuid "0960b01f-e6c0-4546-81d7-29b3e19b98e1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 80.01 0)
+			(at 16.8511 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4099,7 +4099,7 @@
 	)
 	(global_label "Col2"
 		(shape output)
-		(at 24.13 77.47 180)
+		(at 24.13 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4109,7 +4109,7 @@
 		)
 		(uuid "0c956bee-d9c9-4dd1-9f6e-2aefcfd4dc96")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 77.47 0)
+			(at 16.8511 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4209,7 @@
 	)
 	(global_label "Col1"
 		(shape output)
-		(at 24.13 74.93 180)
+		(at 24.13 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4219,7 +4219,7 @@
 		)
 		(uuid "38d275d5-a128-4652-8825-37f962a2714b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 74.93 0)
+			(at 16.8511 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4341,132 +4341,132 @@
 	)
 	(global_label "Row2"
 		(shape input)
-		(at 74.93 72.39 0)
+		(at 24.13 69.85 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4f2bd188-be80-4b5e-bbe4-14ffeae7a53f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.8742 72.39 0)
+			(at 16.1858 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Row5"
 		(shape input)
-		(at 74.93 64.77 0)
+		(at 24.13 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4f2bd188-be80-4b5e-bbe4-14ffeae7a540")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.8742 64.77 0)
+			(at 16.1858 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Row3"
 		(shape input)
-		(at 74.93 69.85 0)
+		(at 24.13 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4f2bd188-be80-4b5e-bbe4-14ffeae7a541")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.8742 69.85 0)
+			(at 16.1858 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Row4"
 		(shape input)
-		(at 74.93 67.31 0)
+		(at 24.13 64.77 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4f2bd188-be80-4b5e-bbe4-14ffeae7a542")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.8742 67.31 0)
+			(at 16.1858 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Row0"
 		(shape input)
-		(at 74.93 77.47 0)
+		(at 24.13 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4f2bd188-be80-4b5e-bbe4-14ffeae7a543")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.8742 77.47 0)
+			(at 16.1858 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "Row1"
 		(shape input)
-		(at 74.93 74.93 0)
+		(at 24.13 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4f2bd188-be80-4b5e-bbe4-14ffeae7a544")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.8742 74.93 0)
+			(at 16.1858 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -4627,7 +4627,7 @@
 	)
 	(global_label "Col0"
 		(shape output)
-		(at 24.13 72.39 180)
+		(at 24.13 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4637,7 +4637,7 @@
 		)
 		(uuid "f5a5b71d-94a7-453c-a944-8c35648f3cfa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 16.8511 72.39 0)
+			(at 16.8511 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4676,7 +4676,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 224.79 154.94 0)
 			(effects
 				(font
@@ -4765,7 +4765,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 173.99 62.23 0)
 			(effects
 				(font
@@ -4854,7 +4854,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 148.59 135.89 0)
 			(effects
 				(font
@@ -4943,7 +4943,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 300.99 62.23 0)
 			(effects
 				(font
@@ -5100,7 +5100,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 224.79 62.23 0)
 			(effects
 				(font
@@ -5189,7 +5189,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 275.59 154.94 0)
 			(effects
 				(font
@@ -5346,7 +5346,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 198.12 118.11 0)
 			(effects
 				(font
@@ -5435,7 +5435,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 224.79 135.89 0)
 			(effects
 				(font
@@ -5728,7 +5728,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 326.39 118.11 0)
 			(effects
 				(font
@@ -5817,7 +5817,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 250.19 99.06 0)
 			(effects
 				(font
@@ -6042,7 +6042,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 274.32 135.89 0)
 			(effects
 				(font
@@ -6131,7 +6131,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 351.79 99.06 0)
 			(effects
 				(font
@@ -6220,7 +6220,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 275.59 62.23 0)
 			(effects
 				(font
@@ -6377,7 +6377,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 351.79 80.01 0)
 			(effects
 				(font
@@ -6602,7 +6602,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 250.19 135.89 0)
 			(effects
 				(font
@@ -6963,7 +6963,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 250.19 154.94 0)
 			(effects
 				(font
@@ -7052,7 +7052,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 248.92 118.11 0)
 			(effects
 				(font
@@ -7141,7 +7141,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 173.99 99.06 0)
 			(effects
 				(font
@@ -7502,7 +7502,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 300.99 154.94 0)
 			(effects
 				(font
@@ -7795,7 +7795,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 148.59 80.01 0)
 			(effects
 				(font
@@ -8086,7 +8086,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 300.99 135.89 0)
 			(effects
 				(font
@@ -8175,7 +8175,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 250.19 62.23 0)
 			(effects
 				(font
@@ -8264,7 +8264,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 147.32 118.11 0)
 			(effects
 				(font
@@ -8557,7 +8557,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 123.19 99.06 0)
 			(effects
 				(font
@@ -8646,7 +8646,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 199.39 154.94 0)
 			(effects
 				(font
@@ -8803,7 +8803,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 121.92 135.89 0)
 			(effects
 				(font
@@ -8960,7 +8960,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 173.99 80.01 0)
 			(effects
 				(font
@@ -9117,7 +9117,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 148.59 62.23 0)
 			(effects
 				(font
@@ -9206,7 +9206,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 148.59 154.94 0)
 			(effects
 				(font
@@ -9363,7 +9363,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 326.39 80.01 0)
 			(effects
 				(font
@@ -9452,7 +9452,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 172.72 118.11 0)
 			(effects
 				(font
@@ -9609,7 +9609,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 173.99 135.89 0)
 			(effects
 				(font
@@ -9766,7 +9766,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 300.99 99.06 0)
 			(effects
 				(font
@@ -9855,7 +9855,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 224.79 99.06 0)
 			(effects
 				(font
@@ -9944,7 +9944,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 300.99 118.11 0)
 			(effects
 				(font
@@ -10033,7 +10033,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 123.19 80.01 0)
 			(effects
 				(font
@@ -10122,7 +10122,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 121.92 154.94 0)
 			(effects
 				(font
@@ -10211,7 +10211,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 199.39 135.89 0)
 			(effects
 				(font
@@ -10504,7 +10504,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 121.92 118.11 0)
 			(effects
 				(font
@@ -10593,7 +10593,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 173.99 154.94 0)
 			(effects
 				(font
@@ -10816,7 +10816,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 148.59 99.06 0)
 			(effects
 				(font
@@ -10905,7 +10905,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 325.12 135.89 0)
 			(effects
 				(font
@@ -10994,7 +10994,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 275.59 99.06 0)
 			(effects
 				(font
@@ -11083,7 +11083,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 199.39 62.23 0)
 			(effects
 				(font
@@ -11376,7 +11376,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 199.39 99.06 0)
 			(effects
 				(font
@@ -11465,7 +11465,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 275.59 80.01 0)
 			(effects
 				(font
@@ -11554,7 +11554,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 223.52 118.11 0)
 			(effects
 				(font
@@ -11779,7 +11779,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 326.39 99.06 0)
 			(effects
 				(font
@@ -12004,7 +12004,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 351.79 135.89 0)
 			(effects
 				(font
@@ -12161,7 +12161,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 326.39 62.23 0)
 			(effects
 				(font
@@ -12318,7 +12318,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 199.39 80.01 0)
 			(effects
 				(font
@@ -12407,7 +12407,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 300.99 80.01 0)
 			(effects
 				(font
@@ -12496,7 +12496,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 250.19 80.01 0)
 			(effects
 				(font
@@ -12721,7 +12721,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 224.79 80.01 0)
 			(effects
 				(font
@@ -13265,7 +13265,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 123.19 62.23 0)
 			(effects
 				(font
@@ -13490,7 +13490,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 274.32 118.11 0)
 			(effects
 				(font
