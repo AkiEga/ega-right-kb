@@ -3,3 +3,4 @@ HW/KiCAD/ega-right-kb/production/backups/*.zip
 build
 
 __pycache__
+HW/KiCAD/production/backups/*.zip
