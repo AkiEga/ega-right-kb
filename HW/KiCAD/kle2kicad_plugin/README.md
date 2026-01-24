@@ -1,6 +1,6 @@
 # KLE to KiCAD Plugin
 
-KiCADのPCBエディタ用プラグインです。keyboard-layout-editor.com (KLE) のJSONファイルを読み込み、スイッチ(SW)とダイオード(D)のフットプリントを自動配置します。
+KiCADのPCBエディタ用プラグインです。keyboard-layout-editor.com (KLE) のJSONファイルを読み込み、スイッチ(SW)とダイオード(D)のフットプリントを自動配置します。また、トッププレートのカットアウトも自動生成できます。
 
 ## 機能
 
@@ -9,7 +9,9 @@ KiCADのPCBエディタ用プラグインです。keyboard-layout-editor.com (KL
 - ダイオードの自動配置（オフセット設定可能）
 - 回転キーのサポート
 - 様々なキーサイズ対応（1u, 1.5u, 2u, ISOエンターなど）
+- **トッププレート自動生成**（PCBの横に並べて出力）
 - GUIによる設定
+- 設定のキャッシュ機能
 
 ## インストール方法
 
@@ -119,6 +121,8 @@ SW01 → D01
 
 ## 設定パラメータ
 
+### 基本設定
+
 | パラメータ | デフォルト値 | 説明 |
 |-----------|-------------|------|
 | Origin X | 50 mm | 配置開始位置のX座標 |
@@ -129,6 +133,37 @@ SW01 → D01
 | Diode Offset Y | 5.08 mm | スイッチ中心からのY方向オフセット |
 | Diode Rotation | 90° | ダイオードの回転角度 |
 
+### トッププレート設定
+
+| パラメータ | デフォルト値 | 説明 |
+|-----------|-------------|------|
+| Plate Offset X | 350 mm | PCB原点からプレートまでのX方向オフセット |
+| Plate Offset Y | 0 mm | PCB原点からプレートまでのY方向オフセット |
+| Cutout Width | 14.0 mm | キースイッチ穴の幅 |
+| Cutout Height | 14.0 mm | キースイッチ穴の高さ |
+| Corner Radius | 0 mm | 穴の角丸半径 |
+| Outline Margin | 5.0 mm | 外形とキーの間のマージン |
+| Outline Corner R | 3.0 mm | 外形の角丸半径 |
+
+### 対応スイッチカットアウトサイズ（参考）
+
+| スイッチタイプ | サイズ |
+|---------------|--------|
+| Cherry MX（標準） | 14.0 x 14.0 mm |
+| Alps互換 | 15.6 x 12.8 mm |
+| Kailh Choc | 13.8 x 13.8 mm |
+
+### レイアウトイメージ
+
+```
+┌─────────────────┐          ┌─────────────────┐
+│                 │          │                 │
+│    PCB          │   350mm  │  Top Plate      │
+│  (origin 50,50) │ ──────── │  (Edge.Cuts)    │
+│                 │          │                 │
+└─────────────────┘          └─────────────────┘
+```
+
 ## ファイル構成
 
 ```
@@ -136,7 +171,9 @@ kle2kicad_plugin/
 ├── __init__.py           # プラグイン登録
 ├── __main__.py           # コマンドライン実行用
 ├── kle2kicad_action.py   # ActionPluginクラス（GUI）
-├── kle2kicad_core.py     # コアロジック
+├── kle2kicad_core.py     # スイッチ/ダイオード配置コアロジック
+├── top_plate_generator.py # トッププレート生成
+├── cache_manager.py      # 設定キャッシュ管理
 ├── metadata.json         # PCM用メタデータ
 ├── README.md             # このファイル
 ├── icon.png              # ツールバーアイコン（24x24）

@@ -191,17 +191,43 @@ class CacheManager:
             Dictionary of settings with defaults filled in.
         """
         defaults = {
+            # Basic settings
             'origin_x': 50.0,
             'origin_y': 50.0,
             'sw_width': 19.05,
             'sw_height': 19.05,
+            # Diode settings
             'place_diodes': True,
             'diode_offset_x': 0.0,
             'diode_offset_y': 5.08,
             'diode_rotation': 90.0,
+            # Top plate settings
+            'generate_plate': False,
+            'plate_offset_x': 0.0,
+            'plate_offset_y': 150.0,
+            'generate_vcut': True,
+            'cutout_width': 14.0,
+            'cutout_height': 14.0,
+            'cutout_corner_radius': 0.0,
+            'generate_outline': False,
+            'margin_top': 5.0,
+            'margin_bottom': 5.0,
+            'margin_left': 5.0,
+            'margin_right': 5.0,
+            'outline_corner_radius': 3.0,
+            'clear_edge_cuts': False,
+            # PCB outline settings
+            'generate_pcb_outline': False,
+            # Screw hole settings
+            'generate_screw_holes': False,
+            'screw_hole_diameter': 2.7,
+            'screw_hole_inset': 5.0,
+            'screw_edge_spacing': 50.0,
+            'screw_corner_holes': True,
+            'screw_edge_holes': False,
         }
         
-        # Merge with cached settings
+        # Merge with cached settings (cached values override defaults)
         cached = self.get_last_settings()
         if cached:
             for key in defaults:
