@@ -42,24 +42,24 @@
 #define NUM_COLS 10
 #define NUM_KEYS 50
 
-// GPIO pin for keyboard as matrix circuit
-#define GPIO_ROW_0 (21)
-#define GPIO_ROW_1 (20)
-#define GPIO_ROW_2 (19)
-#define GPIO_ROW_3 (18)
-#define GPIO_ROW_4 (17)
-#define GPIO_ROW_5 (16)
+// GPIO pin for keyboard as matrix circuit (from KiCAD netlist)
+#define GPIO_ROW_0 (5)   // Row0 = GPIO5
+#define GPIO_ROW_1 (4)   // Row1 = GPIO4
+#define GPIO_ROW_2 (3)   // Row2 = GPIO3
+#define GPIO_ROW_3 (2)   // Row3 = GPIO2
+#define GPIO_ROW_4 (1)   // Row4 = GPIO1
+#define GPIO_ROW_5 (0)   // Row5 = GPIO0
 
-#define GPIO_COL_0 (4)
-#define GPIO_COL_1 (5)
-#define GPIO_COL_2 (6)
-#define GPIO_COL_3 (7)
-#define GPIO_COL_4 (8)
-#define GPIO_COL_5 (9)
-#define GPIO_COL_6 (3)
-#define GPIO_COL_7 (2)
-#define GPIO_COL_8 (1)
-#define GPIO_COL_9 (0)
+#define GPIO_COL_0 (6)   // Col0 = GPIO6
+#define GPIO_COL_1 (7)   // Col1 = GPIO7
+#define GPIO_COL_2 (8)   // Col2 = GPIO8
+#define GPIO_COL_3 (9)   // Col3 = GPIO9
+#define GPIO_COL_4 (10)  // Col4 = GPIO10
+#define GPIO_COL_5 (11)  // Col5 = GPIO11
+#define GPIO_COL_6 (12)  // Col6 = GPIO12
+#define GPIO_COL_7 (13)  // Col7 = GPIO13
+#define GPIO_COL_8 (14)  // Col8 = GPIO14
+#define GPIO_COL_9 (15)  // Col9 = GPIO15
 
 // Row and Column GPIO arrays
 static const uint row_pins[NUM_ROWS] = {
@@ -73,7 +73,7 @@ static const uint col_pins[NUM_COLS] = {
 };
 
 // Number of layers
-#define NUM_LAYERS 2
+#define NUM_LAYERS 1
 // #define HID_KEY_FN 0xFF  // Custom code for FN key
 
 // Key to HID keycode mapping table
@@ -90,54 +90,26 @@ static const uint8_t keycode_map[NUM_LAYERS][NUM_ROWS][NUM_COLS] = {
     { HID_KEY_5, HID_KEY_6, HID_KEY_7, HID_KEY_8, HID_KEY_9,
       HID_KEY_0, HID_KEY_MINUS, HID_KEY_EQUAL, HID_KEY_KANJI3, HID_KEY_BACKSPACE },
     
-    // ROW2: T, Y, U, I, O, P, @, [, Enter, (empty)
+    // ROW2: T, Y, U, I, O, P, @, [, Enter, PrintScreen
     { HID_KEY_T, HID_KEY_Y, HID_KEY_U, HID_KEY_I, HID_KEY_O,
-      HID_KEY_P, HID_KEY_BRACKET_LEFT, HID_KEY_BRACKET_RIGHT, HID_KEY_ENTER, 0 },
+      HID_KEY_P, HID_KEY_BRACKET_LEFT, HID_KEY_BRACKET_RIGHT, HID_KEY_ENTER, HID_KEY_PRINT_SCREEN },
     
-    // ROW3: G, H, J, K, L, ;, :, ](む), (empty), (empty)
+    // ROW3: G, H, J, K, L, ;, :, ](む), Delete, (empty)
     { HID_KEY_G, HID_KEY_H, HID_KEY_J, HID_KEY_K, HID_KEY_L,
-      HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_EUROPE_1, 0, 0 },
+      HID_KEY_SEMICOLON, HID_KEY_APOSTROPHE, HID_KEY_EUROPE_1, HID_KEY_DELETE, 0 },
     
-    // ROW4: B, N, M, <(,), >(.), /, \(ろ), RShift, (empty), (empty)
+    // ROW4: B, N, M, <(,), >(.), /, \(ろ), Home, UpArrow, End
     { HID_KEY_B, HID_KEY_N, HID_KEY_M, HID_KEY_COMMA, HID_KEY_PERIOD,
-      HID_KEY_SLASH, HID_KEY_KANJI1, 0, 0, 0 },
+      HID_KEY_SLASH, HID_KEY_KANJI1, HID_KEY_HOME, HID_KEY_ARROW_UP, HID_KEY_END },
     
-    // ROW5: Space, 変換, Alt, PrintScreen, Delete, FN, (empty), (empty), (empty), (empty)
-    { HID_KEY_SPACE, HID_KEY_KANJI4, HID_KEY_ALT_RIGHT, HID_KEY_PRINT_SCREEN,
-      HID_KEY_DELETE, 0, 0, 0, 0, 0 }
-  },
-  // Layer 1 (FN layer) - Arrow keys on HJKL, Home/End/PgUp/PgDn, etc.
-  {
-    // ROW0: (empty)...
-    { 0, 0, 0, 0, 0, 
-      0, 0, 0, 0, 0 },
-    
-    // ROW1: (empty)...
-    { 0, 0, 0, 0, 0, 
-      0, 0, 0, 0, 0 },
-    
-    // ROW2: (empty)...
-    { 0, 0, 0, 0, 0, 
-      0, 0, 0, 0, 0 },
-    
-    // ROW3: (empty), (empty), (empty), (empty), (empty), Arrow Up, (empty), (empty), (empty), (empty)
-    { 0, 0, 0, 0, 0,
-      HID_KEY_ARROW_UP, 0, 0, 0, 0 },
-
-    // ROW4: (empty), (empty), (empty), (empty), Arrow Left, Arrow Down, Arrow Right, (empty), (empty), (empty)
-    { 0, 0, 0, 0, HID_KEY_ARROW_LEFT,
-      HID_KEY_ARROW_DOWN, HID_KEY_ARROW_RIGHT, 0, 0, 0 },
-    
-    // ROW5: (empty)... (FN key is handled specially, not via keycode_map)
-    { 0, 0, 0, 0, 0, 
-      0, 0, 0, 0, 0 }
+    // ROW5: Space, 変換, Kana, Alt, Context, LeftArrow, DownArrow, RightArrow, (empty), (empty)
+    { HID_KEY_SPACE, HID_KEY_KANJI4, HID_KEY_KANJI2, HID_KEY_ALT_RIGHT, HID_KEY_APPLICATION,
+      HID_KEY_ARROW_LEFT, HID_KEY_ARROW_DOWN, HID_KEY_ARROW_RIGHT, 0, 0 }
   }
 };
 
 // Modifier key positions (row * 10 + col)
-#define KEY_POS_RSHIFT  (4 * 10 + 7)  // SW44 - Right Shift
-#define KEY_POS_RALT    (5 * 10 + 2)  // SW47 - Right Alt
-#define KEY_POS_FN      (5 * 10 + 5)  // SW50 - FN key (replaces RCtrl)
+#define KEY_POS_RALT    (5 * 10 + 3)  // SW47 - Right Alt
 
 // Keyboard state - 64 bits for up to 60 keys
 static uint64_t g_key_state = 0;
@@ -263,10 +235,6 @@ static void send_hid_report(uint8_t report_id, uint64_t key_state)
         
         // Determine active layer based on FN key state
         uint8_t layer = 0;
-        if (key_state & (1ULL << KEY_POS_FN)) {
-          layer = 1; // FN key pressed - switch to layer 1
-        }
-
         // Check modifier keys and build keycode array
         for (uint row = 0; row < NUM_ROWS && key_count < 6; ++row) {
           for (uint col = 0; col < NUM_COLS && key_count < 6; ++col) {
@@ -274,12 +242,8 @@ static void send_hid_report(uint8_t report_id, uint64_t key_state)
             
             if (key_state & (1ULL << bit_pos)) {
               // Check if this is a modifier key or FN key
-              if (bit_pos == KEY_POS_RSHIFT) {
-                modifier |= KEYBOARD_MODIFIER_RIGHTSHIFT;
-              } else if (bit_pos == KEY_POS_RALT) {
+              if (bit_pos == KEY_POS_RALT) {
                 modifier |= KEYBOARD_MODIFIER_RIGHTALT;
-              } else if (bit_pos == KEY_POS_FN) {
-                // FN key - don't send any keycode, just used for layer switching
               } else {
                 // Regular key - add to keycode array using current layer
                 uint8_t kc = keycode_map[layer][row][col];
@@ -329,9 +293,8 @@ void hid_task(void)
   // Read keyboard matrix
   keyboard_switch_read(&g_key_state);
 
-  // LED on when FN key is pressed (for debugging layer switch)
-  // Change to (g_key_state != 0) to test any key press
-  board_led_write((g_key_state & (1ULL << KEY_POS_FN)) != 0);
+  // LED on when any key is pressed (for debugging matrix scan)
+  board_led_write(g_key_state != 0);
 
   // Remote wakeup
   if (tud_suspended() && g_key_state != 0)
