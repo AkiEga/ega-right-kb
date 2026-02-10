@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="241.33750000000003mm" height="170.4875mm" viewBox="89.75 -37.0 241.33750000000003 170.4875">
+  <!-- Generated from HW/keyboard-layout-editor/ega-right-kb-layout.json -->
+  <g id="plate_outline" style="stroke:black; fill:none; stroke-width:0.5">
+    <rect x="89.75" y="-37.0" width="241.33750000000003" height="170.4875" rx="1.0" ry="1.0" />
+  </g>
+  <g id="switches" style="stroke:red; fill:none; stroke-width:0.1">
+    <rect x="97.775" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="126.35" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="145.4" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="164.45000000000002" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="183.5" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="212.07500000000002" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="231.125" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="250.175" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="269.225" y="2.5250000000000004" width="14.0" height="14.0" />
+    <rect x="97.775" y="31.1" width="14.0" height="14.0" />
+    <rect x="116.825" y="31.1" width="14.0" height="14.0" />
+    <rect x="135.875" y="31.1" width="14.0" height="14.0" />
+    <rect x="154.925" y="31.1" width="14.0" height="14.0" />
+    <rect x="173.975" y="31.1" width="14.0" height="14.0" />
+    <rect x="193.025" y="31.1" width="14.0" height="14.0" />
+    <rect x="212.07500000000002" y="31.1" width="14.0" height="14.0" />
+    <rect x="231.125" y="31.1" width="14.0" height="14.0" />
+    <rect x="250.175" y="31.1" width="14.0" height="14.0" />
+    <rect x="269.225" y="31.1" width="14.0" height="14.0" />
+    <rect x="107.30000000000001" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="126.35" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="145.4" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="164.45000000000002" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="183.5" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="202.55" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="221.60000000000002" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="240.65" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="266.84375" y="59.675" width="14.0" height="14.0" />
+    <rect x="293.0375" y="50.150000000000006" width="14.0" height="14.0" />
+    <rect x="112.0625" y="69.2" width="14.0" height="14.0" />
+    <rect x="131.1125" y="69.2" width="14.0" height="14.0" />
+    <rect x="150.1625" y="69.2" width="14.0" height="14.0" />
+    <rect x="169.2125" y="69.2" width="14.0" height="14.0" />
+    <rect x="188.26250000000002" y="69.2" width="14.0" height="14.0" />
+    <rect x="207.3125" y="69.2" width="14.0" height="14.0" />
+    <rect x="226.3625" y="69.2" width="14.0" height="14.0" />
+    <rect x="245.41250000000002" y="69.2" width="14.0" height="14.0" />
+    <rect x="293.0375" y="69.2" width="14.0" height="14.0" />
+    <rect x="121.5875" y="88.25" width="14.0" height="14.0" />
+    <rect x="140.63750000000002" y="88.25" width="14.0" height="14.0" />
+    <rect x="159.6875" y="88.25" width="14.0" height="14.0" />
+    <rect x="178.7375" y="88.25" width="14.0" height="14.0" />
+    <rect x="197.7875" y="88.25" width="14.0" height="14.0" />
+    <rect x="216.8375" y="88.25" width="14.0" height="14.0" />
+    <rect x="235.88750000000002" y="88.25" width="14.0" height="14.0" />
+    <rect x="264.46250000000003" y="93.0125" width="14.0" height="14.0" />
+    <rect x="283.5125" y="93.0125" width="14.0" height="14.0" />
+    <rect x="302.5625" y="93.0125" width="14.0" height="14.0" />
+    <rect x="126.35" y="107.30000000000001" width="14.0" height="14.0" />
+    <rect x="162.06875" y="107.30000000000001" width="14.0" height="14.0" />
+    <rect x="193.025" y="107.30000000000001" width="14.0" height="14.0" />
+    <rect x="219.21875" y="107.30000000000001" width="14.0" height="14.0" />
+    <rect x="240.65" y="107.30000000000001" width="14.0" height="14.0" />
+    <rect x="264.46250000000003" y="112.0625" width="14.0" height="14.0" />
+    <rect x="283.5125" y="112.0625" width="14.0" height="14.0" />
+    <rect x="302.5625" y="112.0625" width="14.0" height="14.0" />
+  </g>
+  <g id="mounting_holes" style="stroke:green; fill:none; stroke-width:0.1">
+    <circle cx="94.75" cy="-32.0" r="1.5" />
+    <circle cx="326.08750000000003" cy="-32.0" r="1.5" />
+    <circle cx="94.75" cy="128.4875" r="1.5" />
+    <circle cx="326.08750000000003" cy="128.4875" r="1.5" />
+  </g>
+</svg>

@@ -14,7 +14,22 @@ def generate_svg(json_path, svg_path):
     
     # 1u size in mm
     U = 19.05
-    HOLE_SIZE = 14.0
+
+    # Switch cutout (mm)
+    CUTOUT_WIDTH = 14.0
+    CUTOUT_HEIGHT = 14.0
+    CUTOUT_CORNER_RADIUS = 0.0
+
+    # Plate outline margins (mm)
+    MARGIN_TOP = 37.0
+    MARGIN_BOTTOM = 4.9
+    MARGIN_LEFT = 5.5
+    MARGIN_RIGHT = 12.0
+    OUTLINE_CORNER_RADIUS = 1.0
+
+    # Mounting holes (mm)
+    SCREW_HOLE_DIAMETER = 3.0
+    SCREW_HOLE_INSET = 5.0
     
     # To calculate bounding box
     min_x = float('inf')
@@ -75,11 +90,10 @@ def generate_svg(json_path, svg_path):
         current_y += 1.0
 
     # Margin for the plate
-    MARGIN = 5.0
-    plate_min_x = min_x - MARGIN
-    plate_min_y = min_y - MARGIN
-    plate_max_x = max_x + MARGIN
-    plate_max_y = max_y + MARGIN
+    plate_min_x = min_x - MARGIN_LEFT
+    plate_min_y = min_y - MARGIN_TOP
+    plate_max_x = max_x + MARGIN_RIGHT
+    plate_max_y = max_y + MARGIN_BOTTOM
     
     width = plate_max_x - plate_min_x
     height = plate_max_y - plate_min_y
@@ -88,23 +102,37 @@ def generate_svg(json_path, svg_path):
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}mm" height="{height}mm" viewBox="{plate_min_x} {plate_min_y} {width} {height}">',
         f'  <!-- Generated from {json_path} -->',
         f'  <g id="plate_outline" style="stroke:black; fill:none; stroke-width:0.5">',
-        f'    <rect x="{plate_min_x}" y="{plate_min_y}" width="{width}" height="{height}" rx="3" ry="3" />',
+        f'    <rect x="{plate_min_x}" y="{plate_min_y}" width="{width}" height="{height}" rx="{OUTLINE_CORNER_RADIUS}" ry="{OUTLINE_CORNER_RADIUS}" />',
         f'  </g>',
         f'  <g id="switches" style="stroke:red; fill:none; stroke-width:0.1">',
     ]
     
     for key in keys:
         # Draw switch hole
-        hx = key['cx'] - HOLE_SIZE / 2.0
-        hy = key['cy'] - HOLE_SIZE / 2.0
-        svg_content.append(f'    <rect x="{hx}" y="{hy}" width="{HOLE_SIZE}" height="{HOLE_SIZE}" />')
+        hx = key['cx'] - CUTOUT_WIDTH / 2.0
+        hy = key['cy'] - CUTOUT_HEIGHT / 2.0
+        if CUTOUT_CORNER_RADIUS > 0.0:
+            svg_content.append(
+                f'    <rect x="{hx}" y="{hy}" width="{CUTOUT_WIDTH}" height="{CUTOUT_HEIGHT}" '
+                f'rx="{CUTOUT_CORNER_RADIUS}" ry="{CUTOUT_CORNER_RADIUS}" />'
+            )
+        else:
+            svg_content.append(f'    <rect x="{hx}" y="{hy}" width="{CUTOUT_WIDTH}" height="{CUTOUT_HEIGHT}" />')
         
     svg_content.append('  </g>')
-    
-    # Optional: Keycap outlines for reference
-    svg_content.append('  <g id="keycaps" style="stroke:blue; fill:none; stroke-width:0.1; opacity:0.5">')
-    for key in keys:
-        svg_content.append(f'    <rect x="{key["x"]}" y="{key["y"]}" width="{key["width"]}" height="{key["height"]}" />')
+
+    # Mounting holes (corner holes only)
+    hole_radius = SCREW_HOLE_DIAMETER / 2.0
+    hole_centers = [
+        (plate_min_x + SCREW_HOLE_INSET, plate_min_y + SCREW_HOLE_INSET),
+        (plate_max_x - SCREW_HOLE_INSET, plate_min_y + SCREW_HOLE_INSET),
+        (plate_min_x + SCREW_HOLE_INSET, plate_max_y - SCREW_HOLE_INSET),
+        (plate_max_x - SCREW_HOLE_INSET, plate_max_y - SCREW_HOLE_INSET),
+    ]
+
+    svg_content.append('  <g id="mounting_holes" style="stroke:green; fill:none; stroke-width:0.1">')
+    for cx, cy in hole_centers:
+        svg_content.append(f'    <circle cx="{cx}" cy="{cy}" r="{hole_radius}" />')
     svg_content.append('  </g>')
     
     svg_content.append('</svg>')
