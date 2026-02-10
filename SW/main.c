@@ -324,9 +324,11 @@ void tud_hid_report_complete_cb(uint8_t instance, uint8_t const* report, uint16_
   {
     send_hid_report(next_report_id, g_key_state);
   }
-}
 
-// Invoked when received GET_REPORT control request
+  // LED on when any key is pressed (for debugging matrix scan)
+  // board_led_write(g_key_state != 0);
+}
+  // Invoked when received GET_REPORT control request
 // Application must fill buffer report's content and return its length.
 // Return zero will cause the stack to STALL request
 uint16_t tud_hid_get_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_t report_type, uint8_t* buffer, uint16_t reqlen)
