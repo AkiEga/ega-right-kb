@@ -294,7 +294,7 @@ void hid_task(void)
   keyboard_switch_read(&g_key_state);
 
   // LED on when any key is pressed (for debugging matrix scan)
-  board_led_write(g_key_state != 0);
+  // board_led_write(g_key_state != 0);
 
   // Remote wakeup
   if (tud_suspended() && g_key_state != 0)
